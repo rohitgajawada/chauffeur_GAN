@@ -11,7 +11,7 @@ MEASUREMENTS:
   targets: (31)
 
 BATCH_SIZE: 4
-NUMBER_ITERATIONS: 20000000
+NUMBER_ITERATIONS: 20000
 NUMBER_FRAMES_FUSION: 1
 STEERING_DIVISION: [0.05, 0.05, 0.1, 0.3, 0.3, 0.1, 0.05, 0.05]
 LABELS_DIVISION: [[2]]
@@ -23,8 +23,17 @@ SEQUENCE_STRIDE: 1
 AUGMENT_LATERAL_STEERINGS: 6  # Depending on this value there is a constant multiplying lateral steers
 SPEED_FACTOR: 40.0
 TRAIN_DATASET_NAME: 'SeqTrain'
+
+#GAN RELATED PARAMETERS
 GANMODEL_NAME: 'LSDcontrol'
+LOSS_FUNCTION: 'LSGAN'
+LR_D: 0.0002
+LR_G: 0.0002
+LEARNING_RATE: 0.00005
 SKIP: 0
+TYPE: "recon"
+L1_WEIGHT: 0
+LABSMOOTH: 0
 
 #### Testing Related Parameters ####
 TEST_SCHEDULE: range(0, 20000000, 2000)  # The frequency the model is actually tested.
@@ -34,7 +43,6 @@ TEST_SCHEDULE: range(0, 20000000, 2000)  # The frequency the model is actually t
 
 
 MODEL_NAME: 'coil_icra'
-LEARNING_RATE: 0.0002  # First
 TRAINING_SCHEDEULE: [[50000, 0.5], [100000, 0.5 * 0.5], [150000, 0.5 * 0.5 * 0.5], [200000, 0.5 * 0.5 * 0.5 * 0.5],[250000, 0.5 * 0.5 * 0.5 * 0.5 * 0.5]]  # Number of iterations, multiplying factor
 
 #TODO check how to use this part

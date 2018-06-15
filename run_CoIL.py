@@ -6,7 +6,7 @@ import os
 import time
 
 
-from coil_core import execute_train, execute_validation, execute_drive, folder_execute, trainGAN, testGAN, trainnoGAN, trainnewGAN
+from coil_core import execute_train, execute_validation, execute_drive, folder_execute, testGAN, trainnoGAN, trainnewGAN
 
 
 if __name__ == '__main__':
@@ -69,10 +69,10 @@ if __name__ == '__main__':
 
     if args.single_process is not None:
         if args.single_process == 'train':
-            trainnewGAN.execute("1", "GAN15", "experiment_1")
-            # trainnewGAN.execute("2", "GAN15", "experiment_2")
-            # trainnewGAN.execute("3", "GAN15", "experiment_3")
-            # trainnewGAN.execute("4", "GAN15", "experiment_4")
+            # trainnewGAN.execute("9", "eccv", "experiment_1")
+            # trainnewGAN.execute("5", "eccv", "experiment_2")
+            trainnewGAN.execute("9", "eccv", "experiment_3")
+            # trainnewGAN.execute("4", "eccv", "experiment_4")
 
         if args.single_process == 'validation':
             execute_validation("0", "eccv", "experiment_1", "SeqVal")

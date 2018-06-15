@@ -17,11 +17,12 @@ from utils.checkpoint_schedule import is_ready_to_save, get_latest_saved_checkpo
 from torchvision import transforms
 
 import network.models.coil_ganmodules as ganmodels
+import network.models.coil_ganmodules_nopatch as ganmodels_nopatch
+import network.models.coil_ganmodules_task as ganmodels_task
 import torch.nn.functional as F
 from torch.autograd import Variable
 
 import torchvision.utils as vutils
-
 import torch.nn.init as init
 
 def init_weights(net, init_type='normal', gain=0.02):
@@ -79,16 +80,24 @@ def execute(gpu, exp_batch, exp_alias):
     l1weight = g_conf.L1_WEIGHT
     image_size = tuple([88, 200])
 
-    print("Configurations:", g_conf)
+    print("Configurations")
+    print("GANMODEL_NAME", g_conf.GANMODEL_NAME)
+    print("LOSS_FUNCTION", g_conf.LOSS_FUNCTION)
+    print("LR_G, LR_D, LR", g_conf.LR_G, g_conf.LR_D, g_conf.LEARNING_RATE)
+    print("SKIP", g_conf.SKIP)
+    print("TYPE", g_conf.TYPE)
+    print("L1 WEIGHT", g_conf.L1_WEIGHT)
+    print("LAB SMOOTH", g_conf.LABSMOOTH)
+
     if g_conf.GANMODEL_NAME == 'LSDcontrol':
-        netD = ganmodels._netD().cuda()
-        netG = ganmodels._netG(skip=g_conf.SKIP).cuda()
-    elif g_conf.GANMODEL_NAME == 'LSDcontrol_nopatch'::
-        netD = ganmodels_nopatch._netD().cuda()
-        netG = ganmodels_nopatch._netG().cuda()
-    elif g_conf.GANMODEL_NAME == 'LSDcontrol_task'::
-        netD = ganmodels_task._netD().cuda()
-        netG = ganmodels_task._netG().cuda()
+        netD = ganmodels._netD(loss=g_conf.LOSS_FUNCTION).cuda()
+        netG = ganmodels._netG(loss=g_conf.LOSS_FUNCTION, skip=g_conf.SKIP).cuda()
+    elif g_conf.GANMODEL_NAME == 'LSDcontrol_nopatch':
+        netD = ganmodels_nopatch._netD(loss=g_conf.LOSS_FUNCTION).cuda()
+        netG = ganmodels_nopatch._netG(loss=g_conf.LOSS_FUNCTION).cuda()
+    elif g_conf.GANMODEL_NAME == 'LSDcontrol_task':
+        netD = ganmodels_task._netD(loss=g_conf.LOSS_FUNCTION).cuda()
+        netG = ganmodels_task._netG(loss=g_conf.LOSS_FUNCTION).cuda()
 
     init_weights(netD)
     init_weights(netG)
@@ -96,12 +105,12 @@ def execute(gpu, exp_batch, exp_alias):
     print(netD)
     print(netG)
 
-    optimD = torch.optim.Adam(netD.parameters(), lr=0.0002, betas=(0.7, 0.999))
-    optimG = torch.optim.Adam(netG.parameters(), lr=0.0002, betas=(0.7, 0.999))
+    optimD = torch.optim.Adam(netD.parameters(), lr=g_conf.LR_D, betas=(0.7, 0.999))
+    optimG = torch.optim.Adam(netG.parameters(), lr=g_conf.LR_G, betas=(0.7, 0.999))
     if g_conf.TYPE =='task':
-        optimF = torch.optim.Adam(netG.parameters(), lr=0.0002, betas=(0.7, 0.999))
+        optimF = torch.optim.Adam(netG.parameters(), lr=g_conf.LEARNING_RATE, betas=(0.7, 0.999))
 
-    if g_conf.LOSS_FUNCTION == 'LSGAN'
+    if g_conf.LOSS_FUNCTION == 'LSGAN':
         Loss = torch.nn.MSELoss().cuda()
     elif g_conf.LOSS_FUNCTION == 'NORMAL':
         Loss = torch.nn.BCELoss().cuda()
@@ -121,6 +130,14 @@ def execute(gpu, exp_batch, exp_alias):
     if not os.path.exists('./imgs_' + exp_alias):
         os.mkdir('./imgs_' + exp_alias)
 
+    #TODO add image queue
+    #TODO modularize for models
+    #TODO modularize for losses (keep in mind sigmoid, tanh, etc)
+    #TODO remove patchgan
+    #TODO increase batchsize
+    #TODO add auxiliary regression loss for steering
+    #TODO possibly remove BatchSequenceSampler and put normal sampler
+
     for data in data_loader:
 
         val = 0.5
@@ -134,10 +151,10 @@ def execute(gpu, exp_batch, exp_alias):
 
         if iteration % 200 == 0:
             imgs_to_save = torch.cat((inputs_in[:2] + val, fake_inputs_in[:2]), 0).cpu().data
-            vutils.save_image(imgs_to_save, './imgs_' + exp_alias + '/' + str(iteration) + 'noganreal_samples.png', normalize=True)
+            vutils.save_image(imgs_to_save, './imgs_' + exp_alias + '/' + str(iteration) + '_real_and_fake.png', normalize=True)
             coil_logger.add_image("Images", imgs_to_save, iteration)
 
-        ##--------------------Discriminator part!!!!!!!!!!-----------------------
+        ##--------------------Discriminator part!!!!!!!!!!-------------------##
         set_requires_grad(netD, True)
         optimD.zero_grad()
 
@@ -145,34 +162,33 @@ def execute(gpu, exp_batch, exp_alias):
         outputsD_fake_forD = netD(fake_inputs.detach())
 
         labsize = outputsD_fake_forD.size()
-        #Create labels of patchgan style with label smoothing
         labels_fake = torch.zeros(labsize) #Fake labels
         label_fake_noise = torch.rand(labels_fake.size()) * 0.05 - 0.025 #Label smoothing
-        labels_fake = labels_fake
-        labels_fake = Variable(labels_fake).cuda()
 
-        lossD_fake = MSE_loss(outputsD_fake_forD, labels_fake)
-        # lossD_fake = BCE_loss(outputsD_fake_forD, labels_fake)
+        if g_conf.LABSMOOTH == 1:
+            labels_fake = labels_fake + labels_fake_noise
+
+        labels_fake = Variable(labels_fake).cuda()
+        lossD_fake = Loss(outputsD_fake_forD, labels_fake)
 
         ##real
         outputsD_real = netD(inputs)
 
         labsize = outputsD_real.size()
-        print("label size is: ", labsize)
-        #Create labels of patchgan style with label smoothing
         labels_real = torch.ones(labsize) #Real labels
         label_real_noise = torch.rand(labels_real.size()) * 0.05 - 0.025 #Label smoothing
-        labels_real = labels_real
-        labels_real = Variable(labels_real).cuda()
 
-        lossD_real = MSE_loss(outputsD_real, labels_real)
-        # lossD_real = BCE_loss(outputsD_real, labels_real)
+        if g_conf.LABSMOOTH == 1:
+            labels_real = labels_real + labels_real_noise
+
+        labels_real = Variable(labels_real).cuda()
+        lossD_real = Loss(outputsD_real, labels_real)
 
         #Discriminator updates
 
         lossD = (lossD_real + lossD_fake) * 0.5
         lossD /= len(inputs)
-        lossD.backward() #retain_graph=True needed?
+        lossD.backward()
         optimD.step()
 
 
@@ -182,27 +198,17 @@ def execute(gpu, exp_batch, exp_alias):
 
         ##--------------------Generator part!!!!!!!!!!-----------------------
 
-        #TODO add image queue
-        #TODO modularize for models
-        #TODO modularize for losses
-        #TODO remove patchgan
-        #TODO increase batchsize
-        #TODO add auxiliary regression loss for steering
-
         set_requires_grad(netD, False)
         optimG.zero_grad()
         outputsD_fake_forG = netD(fake_inputs)
         #Generator updates
 
-        lossG_adv = MSE_loss(outputsD_fake_forG, labels_real)
-        # lossG_adv = BCE_loss(outputsD_fake_forG, labels_real)
+        lossG_adv = Loss(outputsD_fake_forG, labels_real)
         lossG_smooth = L1_loss(fake_inputs, inputs)
-        # lossG = lossG_adv + l1weight * lossG_smooth
-
-        lossG = lossG_adv #USING ONLY ADVERSARIAL LOSS
+        lossG = (lossG_adv + l1weight * lossG_smooth) / (1.0 + l1weight)
         lossG /= len(inputs)
 
-        lossG.backward() #retain_graph=True needed?
+        lossG.backward()
         optimG.step()
 
         coil_logger.add_scalar('Total LossG', lossG.data, iteration)
@@ -212,7 +218,6 @@ def execute(gpu, exp_batch, exp_alias):
         #optimization for one iter done!
 
         position = random.randint(0, len(float_data)-1)
-
         if lossD.data < best_lossD:
             best_lossD = lossD.data.tolist()
 

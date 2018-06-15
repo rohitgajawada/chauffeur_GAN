@@ -71,7 +71,7 @@ _g_conf.EXPERIMENT_BATCH_NAME = "eccv"
 _g_conf.EXPERIMENT_NAME = "default"
 # TODO: not necessarily the configuration need to know about this
 _g_conf.PROCESS_NAME = "None"
-_g_conf.NUMBER_ITERATIONS = 200000
+_g_conf.NUMBER_ITERATIONS = 20000000
 _g_conf.SAVE_SCHEDULE = range(0, 20000000, 2000)
 _g_conf.NUMBER_FRAMES_FUSION = 1
 _g_conf.NUMBER_IMAGES_SEQUENCE = 1
@@ -81,13 +81,15 @@ _g_conf.SPEED_FACTOR = 40.0
 _g_conf.AUGMENT_LATERAL_STEERINGS = 6
 
 #ganstuff
-_g_conf.GANMODEL_NAME: 'LSDcontrol'
-_g_conf.LOSS_FUNCTION: 'LSGAN'
-_g_conf.LR_D: 0.0002
-_g_conf.LR_G: 0.0002
-_g_conf.LEARNING_RATE: 0.00005
-_g_conf.SKIP: 0
-_g_conf.TYPE: "task"
+_g_conf.GANMODEL_NAME = 'LSDcontrol'
+_g_conf.LOSS_FUNCTION = 'LSGAN'
+_g_conf.LR_D = 0.0002
+_g_conf.LR_G = 0.0002
+_g_conf.LEARNING_RATE = 0.00005
+_g_conf.SKIP = 0
+_g_conf.TYPE = "task"
+_g_conf.LABSMOOTH = 0
+_g_conf.L1_WEIGHT = 0
 
 
 """#### Network Related Parameters ####"""
