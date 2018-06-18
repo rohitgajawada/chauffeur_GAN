@@ -69,9 +69,9 @@ if __name__ == '__main__':
 
     if args.single_process is not None:
         if args.single_process == 'train':
-            # trainnewGAN.execute("9", "eccv", "experiment_1")
-            # trainnewGAN.execute("5", "eccv", "experiment_2")
-            trainnewGAN.execute("9", "eccv", "experiment_3")
+            # trainnewGAN.execute("8", "eccv", "experiment_1")
+            trainnewGAN.execute("9", "eccv", "experiment_2")
+            # trainnewGAN.execute("9", "eccv", "experiment_3")
             # trainnewGAN.execute("4", "eccv", "experiment_4")
 
         if args.single_process == 'validation':

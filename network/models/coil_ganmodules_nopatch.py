@@ -104,7 +104,7 @@ class _netD(nn.Module):
         use_bias = norm_layer == nn.InstanceNorm2d
 
         kw = 4
-        padw = 1
+        padw = (1, 0)
         sequence = [
             nn.Conv2d(input_nc, ndf, kernel_size=kw, stride=2, padding=padw),
             nn.LeakyReLU(0.2, True)
@@ -126,7 +126,7 @@ class _netD(nn.Module):
         nf_mult = min(2**n_layers, 8)
         sequence += [
             nn.Conv2d(ndf * nf_mult_prev, ndf * nf_mult,
-                      kernel_size=kw, stride=1, padding=padw, bias=use_bias),
+                      kernel_size=kw, stride=2, padding=padw, bias=use_bias),
             norm_layer(ndf * nf_mult),
             nn.LeakyReLU(0.2, True)
         ]
@@ -156,18 +156,15 @@ class _netD(nn.Module):
 # out = netG(x)
 # Output size is [1, 3, 88, 200]
 
-# def activ_forward_hook(self, inputs, outputs):
-#     print(outputs.size())
-#     print("-------------------")
+def activ_forward_hook(self, inputs, outputs):
+    print(outputs.size())
+    print("-------------------")
 
-# netD = _netD()
-# for m in netD.modules():
-#     if isinstance(m, nn.Conv2d):
-#         print(m)
-#         m.register_forward_hook(activ_forward_hook)
+netD = _netD()
+for m in netD.modules():
+    if isinstance(m, nn.Conv2d):
+        print(m)
+        m.register_forward_hook(activ_forward_hook)
 
-# x = Variable(torch.randn(1, 3, 88, 200))
-# out = netD(x)
-# conv3_out = Variable(torch.randn(1, 64, 19, 47))
-# out = netG(x, conv3_out)
-#Output size is [1, 4, 11, 25]
+x = Variable(torch.randn(1, 3, 88, 200))
+out = netD(x)

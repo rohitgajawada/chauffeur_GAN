@@ -80,7 +80,7 @@ def execute(gpu, exp_batch, exp_alias):
     l1weight = g_conf.L1_WEIGHT
     image_size = tuple([88, 200])
 
-    print("Configurations")
+    print("Configurations of ", exp_alias)
     print("GANMODEL_NAME", g_conf.GANMODEL_NAME)
     print("LOSS_FUNCTION", g_conf.LOSS_FUNCTION)
     print("LR_G, LR_D, LR", g_conf.LR_G, g_conf.LR_D, g_conf.LEARNING_RATE)
@@ -131,12 +131,9 @@ def execute(gpu, exp_batch, exp_alias):
         os.mkdir('./imgs_' + exp_alias)
 
     #TODO add image queue
-    #TODO modularize for models
-    #TODO modularize for losses (keep in mind sigmoid, tanh, etc)
-    #TODO remove patchgan
-    #TODO increase batchsize
     #TODO add auxiliary regression loss for steering
     #TODO possibly remove BatchSequenceSampler and put normal sampler
+    #TODO put family for losses
 
     for data in data_loader:
 
@@ -173,6 +170,7 @@ def execute(gpu, exp_batch, exp_alias):
 
         ##real
         outputsD_real = netD(inputs)
+        print("some d outputs", outputsD_real[0])
 
         labsize = outputsD_real.size()
         labels_real = torch.ones(labsize) #Real labels
