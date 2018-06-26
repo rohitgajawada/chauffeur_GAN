@@ -34,7 +34,6 @@ class Conv(nn.Module):
 
 
         """" ------------------ IMAGE MODULE ---------------- """
-        # Conv2d(input channel, output channel, kernel size, stride), Xavier initialization and 0.1 bias initialization
 
 
         self.layers = []
@@ -44,22 +43,20 @@ class Conv(nn.Module):
 
             conv = nn.Conv2d(in_channels=params['channel_sizes'][i], out_channels=params['channel_sizes'][i+1],
                              kernel_size=params['kernel_sizes'][i], stride=params['strides'][i])
-            #init.xavier_uniform_(conv.weight)
-            #init.constant_(conv.bias, 0.1)
 
             dropout = nn.Dropout2d(p=params['dropouts'][i])
             relu = nn.ReLU(inplace=True)
 
-            # if params['end_layer'] == True and i == len(params['channel_sizes']) - 2:
-            #     layer = nn.Sequential(*[conv, dropout, relu])
-            # else:
-            bn = nn.InstanceNorm2d(params['channel_sizes'][i+1])
+            #This was instancenorm before but I made it batchnorm
+            bn = nn.BatchNorm2d(params['channel_sizes'][i+1])
             layer = nn.Sequential(*[conv, bn, dropout, relu])
 
             self.layers.append(layer)
 
         self.layers = nn.Sequential(*self.layers)
         self.module_name = module_name
+
+        self.ifendlayer = params['end_layer']
 
 
 
@@ -77,12 +74,10 @@ class Conv(nn.Module):
         """ conv1 + batch normalization + dropout + relu """
         x = self.layers(x)
 
-        # x = x.view(-1, self.num_flat_features(x))
-
+        if self.ifendlayer:
+            x = x.view(-1, self.num_flat_features(x))
 
         return x
-
-
 
     def num_flat_features(self, x):
         size = x.size()[1:]  # all dimensions except the batch dimension
@@ -90,22 +85,3 @@ class Conv(nn.Module):
         for s in size:
             num_features *= s
         return num_features
-
-    def load_network(self, checkpoint):
-        """
-        Load a network for a given model definition .
-
-        Args:
-            checkpoint: The checkpoint that the user wants to add .
-
-
-
-        """
-        # coil_logger.add_message('Loading', {
-        #             "Model": {"Loaded checkpoint: " + str(checkpoint) }
-        #
-        #         })
-
-
-
-        # TODO: implement

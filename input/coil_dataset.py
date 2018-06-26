@@ -4,20 +4,18 @@ import h5py
 import traceback
 import sys
 import numpy as np
-
+from skimage import io
 
 from torch.utils.data import Dataset
 import torch
-
 from logger import coil_logger
-
-# TODO: Warning, maybe this does not need to be included everywhere.
 from configs import g_conf
+from random import shuffle
 
 class CoILDataset(Dataset):
     """ The conditional imitation learning dataset"""
 
-    def __init__(self, root_dir, transform=None):  # The transformation object.
+    def __init__(self, root_dir, real_image_dir, transform=None):  # The transformation object.
         """
         Function to encapsulate the dataset
 
@@ -30,6 +28,13 @@ class CoILDataset(Dataset):
         self.sensor_data, self.measurements, self.meta_data = self.pre_load_hdf5_files(root_dir)
         self.transform = transform
         self.batch_read_number = 0
+
+        #real_images_data
+        self.real_image_dir = real_image_dir
+        self.image_paths = os.listdir(self.real_image_dir)
+        self.len_real = len(self.image_paths)
+        self.real_counter = 0
+
 
     def __len__(self):
         # This is seems to be the entire dataset size
@@ -91,7 +96,6 @@ class CoILDataset(Dataset):
                             ] = sensor_image
 
 
-
                 count += 1
 
 
@@ -102,7 +106,22 @@ class CoILDataset(Dataset):
         # TODO: IMPORTANT !!!
         # TODO: ADD GROUND TRUTH CONTROL IN SOME META CONFIGURATION FOR THE DATASET
         # TODO: SO if the data read and manipulate is outside some range, it should report error
-        return batch_sensors, self.measurements[:, used_ids]
+
+
+        #real_images_part
+        if self.real_counter >= self.len_real:
+            self.real_counter = 0
+            shuffle(self.image_paths)
+
+        real_img_name = self.image_paths[self.real_counter]
+        real_img = io.imread(os.path.join(self.real_image_dir, real_img_name))
+        real_img = real_img.transpose((2, 0, 1))
+        real_img = torch.from_numpy(real_img / 255.0).contiguous()
+        real_img = real_img.type(torch.FloatTensor)
+        self.real_counter += 1
+
+
+        return batch_sensors, self.measurements[:, used_ids], real_img
 
     # file_names, image_dataset_names, dataset_names
     def pre_load_hdf5_files(self, path_for_files):

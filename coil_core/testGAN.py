@@ -17,13 +17,13 @@ from utils.checkpoint_schedule import is_ready_to_save, get_latest_saved_checkpo
 from torchvision import transforms
 
 import network.models.coil_ganmodules as ganmodels
+import network.models.coil_ganmodules_task as coil_ganmodules_task
 import torch.nn.functional as F
 from torch.autograd import Variable
 
 import torchvision.utils as vutils
 import torch.nn.init as init
 from torchvision.utils import make_grid
-# import matplotlib.pyplot as plt
 import numpy as np
 import random
 
@@ -71,7 +71,7 @@ def execute(gpu, exp_batch, exp_alias):
         return
 
     full_dataset = os.path.join(os.environ["COIL_DATASET_PATH"], g_conf.TRAIN_DATASET_NAME)
-    dataset = CoILDataset(full_dataset, transform=transforms.Compose([transforms.ToTensor(), transforms.Normalize([ 0.5,  0.5,  0.5], [ 1.0, 1.0, 1.0])]))
+    dataset = CoILDataset(full_dataset, transform=transforms.Compose([transforms.ToTensor()]))
 
     sampler = BatchSequenceSampler(splitter.control_steer_split(dataset.measurements, dataset.meta_data),
                           g_conf.BATCH_SIZE, g_conf.NUMBER_IMAGES_SEQUENCE, g_conf.SEQUENCE_STRIDE)
@@ -83,72 +83,36 @@ def execute(gpu, exp_batch, exp_alias):
     image_size = tuple([88, 200])
     testmode = 1
 
-    if g_conf.GANMODEL_NAME == 'LSDcontrol':
-        netD = ganmodels._netD().cuda()
-        netG = ganmodels._netG(skip=g_conf.SKIP).cuda()
+    modelG = coil_ganmodules_task._netG()
+    modelF = coil_ganmodules_task._netF()
 
-    checkpoint = torch.load(os.path.join('/datatmp/Experiments/rohitgan/_logs/eccv/experiment_1/checkpoints/1010000.pth'))
-    netG.load_state_dict(checkpoint['stateG_dict'])
-    netD.load_state_dict(checkpoint['stateD_dict'])
+    fstd = torch.load('netF_GAN_Pretrained.wts')
+    gstd = torch.load('netG_GAN_Pretrained.wts')
+    print(fstd.keys())
+    print("+++++++++")
+    print(gstd.keys())
+    print(modelG)
 
-    print(netD)
-    print(netG)
+    modelF.load_state_dict(fstd)
+    modelG.load_state_dict(gstd)
 
-    MSE_loss = torch.nn.MSELoss().cuda()
-    L1_loss = torch.nn.L1Loss().cuda()
-
-    iteration = 0
-
+    print(modelF)
+    print(modelG)
     # netG.eval()
-    # netD.eval()
+
     capture_time = time.time()
     for data in data_loader:
 
+        val = 0.5
         input_data, float_data = data
         inputs = input_data['rgb'].cuda()
         inputs = inputs.squeeze(1)
+        inputs_in = inputs - val #subtracted by 0.5
 
         #forward pass
-        fake_inputs = netG(inputs)
+        embeds, branches = modelF(inputs)
+        fake_inputs = modelG(embeds)
 
-        imgs_to_save = torch.cat((fake_inputs, inputs), 0).cpu().data
-        imgs_to_save = (imgs_to_save + 1.0)/2.0
-        imgs = [img for img in imgs_to_save]
-        vutils.save_image(imgs, 'imgs/' + str(iteration) + '.png')
-
-
-        outputsD_fake_forD = netD(fake_inputs.detach())
-
-        labsize = outputsD_fake_forD.size()
-        labels_fake = torch.zeros(labsize[0], labsize[1], labsize[2], labsize[3]) #Fake labels
-        label_fake_noise = torch.rand(labels_fake.size()) * 0.5 - 0.25 #Label smoothing
-        labels_fake = labels_fake + label_fake_noise
-        labels_fake = Variable(labels_fake).cuda()
-
-        lossD_fake = MSE_loss(outputsD_fake_forD, labels_fake)
-
-        outputsD_real = netD(inputs)
-
-        labsize = outputsD_real.size()
-        labels_real = torch.ones(labsize[0], labsize[1], labsize[2], labsize[3]) #Real labels
-        label_real_noise = torch.rand(labels_real.size()) * 0.5 - 0.25 #Label smoothing
-        labels_real = labels_real + label_real_noise
-        labels_real = Variable(labels_real).cuda()
-
-        lossD_real = MSE_loss(outputsD_real, labels_real)
-
-        lossD = (lossD_real + lossD_fake) * 0.5
-        lossD /= len(inputs)
-
-        outputsD_fake_forG = netD(fake_inputs)
-
-        lossG_adv = MSE_loss(outputsD_fake_forG, labels_real)
-        lossG_smooth = L1_loss(fake_inputs, inputs)
-        lossG = lossG_adv + l1weight * lossG_smooth
-        lossG /= len(inputs)
-
-        # print("LossD", lossD.data.tolist(), "LossG", lossG.data.tolist(), "BestLossD", best_lossD, "BestLossG", best_lossG, "Iteration", iteration, "Best Loss Iteration", best_loss_iter)
-
-        iteration += 1
-        # if iteration == 20:
-        #     break
+        imgs_to_save = torch.cat((inputs_in[:2] + val, fake_inputs_in[:2]), 0).cpu().data
+        vutils.save_image(imgs_to_save, './imgs' + '/' + str(iteration) + '_real_and_fake.png', normalize=True)
+        coil_logger.add_image("Images", imgs_to_save, iteration)

@@ -2,7 +2,7 @@
 #### General Configuration Parameters ####
 SAVE_SCHEDULE: range(0, 10000000, 2000)
 
-NUMBER_OF_LOADING_WORKERS: 12   # Number of threads used in the data loader
+NUMBER_OF_LOADING_WORKERS: 6   # Number of threads used in the data loader
 
 #### Input related parameters ####
 SENSORS:
@@ -11,8 +11,8 @@ MEASUREMENTS:
   targets: (31)
 
 #task yaml
-BATCH_SIZE: 100
-NUMBER_ITERATIONS: 10000000
+BATCH_SIZE: 60
+NUMBER_ITERATIONS: 1000000
 NUMBER_FRAMES_FUSION: 1
 STEERING_DIVISION: [0.05, 0.05, 0.1, 0.3, 0.3, 0.1, 0.05, 0.05]
 LABELS_DIVISION: [[2]]
@@ -33,9 +33,11 @@ LR_G: 0.00005
 LEARNING_RATE: 0.0002
 SKIP: 0
 TYPE: "task"
-L1_WEIGHT: 1
+L1_WEIGHT: 0.0
+TASK_ADV_WEIGHT: 0.1
 LABSMOOTH: 0
-PRETRAINED: "RECON"
+PRETRAINED: "IL"
+SEED: 235
 
 #### Testing Related Parameters ####
 TEST_SCHEDULE: range(0, 10000000, 2000)  # The frequency the model is actually tested.

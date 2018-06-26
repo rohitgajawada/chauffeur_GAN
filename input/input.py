@@ -1,4 +1,3 @@
-
 #TODO: This file could be easily eliminated !
 def coil_input_init():
 
@@ -40,6 +39,3 @@ def the_loop():
 
         network.backprop()
         optimizer.do_step()
-
-
-

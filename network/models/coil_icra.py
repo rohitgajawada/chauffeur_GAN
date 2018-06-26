@@ -1,8 +1,8 @@
-from logger import coil_logger
+# from logger import coil_logger
 import torch.nn as nn
 import torch
 
-from utils.general import command_number_to_index
+# from utils.general import command_number_to_index
 
 from .building_blocks import Conv
 from .building_blocks import Branching
@@ -116,7 +116,7 @@ class CoILICRA(nn.Module):
 
     def extract_branch(self, output_vec, branch_number):
 
-        branch_number = command_number_to_index(branch_number)
+        branch_number = 2#command_number_to_index(branch_number)
         if len(branch_number) > 1:
             branch_number = torch.squeeze(branch_number.type(torch.cuda.LongTensor))
         else:
@@ -143,10 +143,10 @@ class CoILICRA(nn.Module):
 
 
         """
-        coil_logger.add_message('Loading', {
-                    "Model": {"Loaded checkpoint: " + str(checkpoint) }
+        # coil_logger.add_message('Loading', {
+        #             "Model": {"Loaded checkpoint: " + str(checkpoint) }
 
-                })
+        #         })
 
 def activ_forward_hook(self, inputs, outputs):
     print(inputs[0].size())

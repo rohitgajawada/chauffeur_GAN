@@ -47,7 +47,7 @@ class _netG(nn.Module):
             nn.ReLU(True),
             ResnetBlock(ngf*4, norm_type=2, bias=True),
             ResnetBlock(ngf*4, norm_type=2, bias=True),
-            ResnetBlock(ngf*4, norm_type=2, bias=True)
+            # ResnetBlock(ngf*4, norm_type=2, bias=True)
         )
 
         self.stage2_upsample = nn.Sequential(
@@ -55,18 +55,27 @@ class _netG(nn.Module):
             nn.InstanceNorm2d(ngf * 4),
             nn.ReLU(True),
             ResnetBlock(ngf * 4, norm_type=2, bias=True),
-            ResnetBlock(ngf * 4, norm_type=2, bias=True),
-            ResnetBlock(ngf * 4, norm_type=2, bias=True)
+            # ResnetBlock(ngf * 4, norm_type=2, bias=True),
+            # ResnetBlock(ngf * 4, norm_type=2, bias=True)
         )
 
-
-        self.stage3_upsample = nn.Sequential(
-            nn.ConvTranspose2d(ngf*4, ngf*2, 5, 2, 0, 0, bias=True),
-            nn.InstanceNorm2d(ngf*2),
-            nn.ReLU(True),
-            ResnetBlock(ngf*2, norm_type=2, bias=True),
-            ResnetBlock(ngf*2, norm_type=2, bias=True),
-        )
+        self.skip = skip
+        if skip:
+            self.stage3_upsample = nn.Sequential(
+                nn.ConvTranspose2d(ngf*4 + self.ndim2, ngf*2, 5, 2, 0, 0, bias=True),
+                nn.InstanceNorm2d(ngf*2),
+                nn.ReLU(True),
+                ResnetBlock(ngf*2, norm_type=2, bias=True),
+                # ResnetBlock(ngf*2, norm_type=2, bias=True),
+            )
+        else:
+            self.stage3_upsample = nn.Sequential(
+                nn.ConvTranspose2d(ngf*4, ngf*2, 5, 2, 0, 0, bias=True),
+                nn.InstanceNorm2d(ngf*2),
+                nn.ReLU(True),
+                ResnetBlock(ngf*2, norm_type=2, bias=True),
+                # ResnetBlock(ngf*2, norm_type=2, bias=True),
+            )
 
         self.stage4_upsample = nn.Sequential(
             nn.ConvTranspose2d(ngf*2, 3, 8, 2),
@@ -81,6 +90,8 @@ class _netG(nn.Module):
 
         x = self.stage1_upsample(x)
         x = self.stage2_upsample(x)
+        if self.skip:
+            x = torch.cat((x, p1), 1)
         x = self.stage3_upsample(x)
         x = self.stage4_upsample(x)
 
