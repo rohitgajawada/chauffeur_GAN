@@ -1,0 +1,422 @@
+steer shape (50000,)
+labels shape  (50000,)
+Configurations of  exp_WGANGP_PretrainedF_IL
+GANMODEL_NAME LSDcontrol_task
+LOSS_FUNCTION NORMAL
+LR_G, LR_D, LR 0.0002 0.0002 0.0002
+SKIP 0
+TYPE task1
+L1 WEIGHT 0.0
+LAB SMOOTH 0
+Transferring  p1.0.layers.0.0.weight  to  perception.0.layers.0.0.weight
+Transferring  p1.0.layers.0.0.bias  to  perception.0.layers.0.0.bias
+Transferring  p1.0.layers.0.1.weight  to  perception.0.layers.0.1.weight
+Transferring  p1.0.layers.0.1.bias  to  perception.0.layers.0.1.bias
+Transferring  p1.0.layers.0.1.running_mean  to  perception.0.layers.0.1.running_mean
+Transferring  p1.0.layers.0.1.running_var  to  perception.0.layers.0.1.running_var
+Transferring  p1.0.layers.1.0.weight  to  perception.0.layers.1.0.weight
+Transferring  p1.0.layers.1.0.bias  to  perception.0.layers.1.0.bias
+Transferring  p1.0.layers.1.1.weight  to  perception.0.layers.1.1.weight
+Transferring  p1.0.layers.1.1.bias  to  perception.0.layers.1.1.bias
+Transferring  p1.0.layers.1.1.running_mean  to  perception.0.layers.1.1.running_mean
+Transferring  p1.0.layers.1.1.running_var  to  perception.0.layers.1.1.running_var
+Transferring  p1.0.layers.2.0.weight  to  perception.0.layers.2.0.weight
+Transferring  p1.0.layers.2.0.bias  to  perception.0.layers.2.0.bias
+Transferring  p1.0.layers.2.1.weight  to  perception.0.layers.2.1.weight
+Transferring  p1.0.layers.2.1.bias  to  perception.0.layers.2.1.bias
+Transferring  p1.0.layers.2.1.running_mean  to  perception.0.layers.2.1.running_mean
+Transferring  p1.0.layers.2.1.running_var  to  perception.0.layers.2.1.running_var
+Transferring  p2.0.layers.0.0.weight  to  perception.0.layers.3.0.weight
+Transferring  p2.0.layers.0.0.bias  to  perception.0.layers.3.0.bias
+Transferring  p2.0.layers.0.1.weight  to  perception.0.layers.3.1.weight
+Transferring  p2.0.layers.0.1.bias  to  perception.0.layers.3.1.bias
+Transferring  p2.0.layers.0.1.running_mean  to  perception.0.layers.3.1.running_mean
+Transferring  p2.0.layers.0.1.running_var  to  perception.0.layers.3.1.running_var
+Transferring  p2.0.layers.1.0.weight  to  perception.0.layers.4.0.weight
+Transferring  p2.0.layers.1.0.bias  to  perception.0.layers.4.0.bias
+Transferring  p2.0.layers.1.1.weight  to  perception.0.layers.4.1.weight
+Transferring  p2.0.layers.1.1.bias  to  perception.0.layers.4.1.bias
+Transferring  p2.0.layers.1.1.running_mean  to  perception.0.layers.4.1.running_mean
+Transferring  p2.0.layers.1.1.running_var  to  perception.0.layers.4.1.running_var
+Transferring  p3.0.layers.0.0.weight  to  perception.0.layers.5.0.weight
+Transferring  p3.0.layers.0.0.bias  to  perception.0.layers.5.0.bias
+Transferring  p3.0.layers.0.1.weight  to  perception.0.layers.5.1.weight
+Transferring  p3.0.layers.0.1.bias  to  perception.0.layers.5.1.bias
+Transferring  p3.0.layers.0.1.running_mean  to  perception.0.layers.5.1.running_mean
+Transferring  p3.0.layers.0.1.running_var  to  perception.0.layers.5.1.running_var
+Transferring  p3.0.layers.1.0.weight  to  perception.0.layers.6.0.weight
+Transferring  p3.0.layers.1.0.bias  to  perception.0.layers.6.0.bias
+Transferring  p3.0.layers.1.1.weight  to  perception.0.layers.6.1.weight
+Transferring  p3.0.layers.1.1.bias  to  perception.0.layers.6.1.bias
+Transferring  p3.0.layers.1.1.running_mean  to  perception.0.layers.6.1.running_mean
+Transferring  p3.0.layers.1.1.running_var  to  perception.0.layers.6.1.running_var
+Transferring  perception_bottom.0.layers.0.0.weight  to  perception.0.layers.7.0.weight
+Transferring  perception_bottom.0.layers.0.0.bias  to  perception.0.layers.7.0.bias
+Transferring  perception_bottom.0.layers.0.1.weight  to  perception.0.layers.7.1.weight
+Transferring  perception_bottom.0.layers.0.1.bias  to  perception.0.layers.7.1.bias
+Transferring  perception_bottom.0.layers.0.1.running_mean  to  perception.0.layers.7.1.running_mean
+Transferring  perception_bottom.0.layers.0.1.running_var  to  perception.0.layers.7.1.running_var
+Transferring  perception_bottom.1.layers.0.0.weight  to  perception.1.layers.0.0.weight
+Transferring  perception_bottom.1.layers.0.0.bias  to  perception.1.layers.0.0.bias
+Transferring  perception_bottom.1.layers.1.0.weight  to  perception.1.layers.1.0.weight
+Transferring  perception_bottom.1.layers.1.0.bias  to  perception.1.layers.1.0.bias
+Transferring  measurements.layers.0.0.weight  to  measurements.layers.0.0.weight
+Transferring  measurements.layers.0.0.bias  to  measurements.layers.0.0.bias
+Transferring  measurements.layers.1.0.weight  to  measurements.layers.1.0.weight
+Transferring  measurements.layers.1.0.bias  to  measurements.layers.1.0.bias
+Transferring  join.after_process.layers.0.0.weight  to  join.after_process.layers.0.0.weight
+Transferring  join.after_process.layers.0.0.bias  to  join.after_process.layers.0.0.bias
+Transferring  speed_branch.layers.0.0.weight  to  speed_branch.layers.0.0.weight
+Transferring  speed_branch.layers.0.0.bias  to  speed_branch.layers.0.0.bias
+Transferring  speed_branch.layers.1.0.weight  to  speed_branch.layers.1.0.weight
+Transferring  speed_branch.layers.1.0.bias  to  speed_branch.layers.1.0.bias
+Transferring  speed_branch.layers.2.0.weight  to  speed_branch.layers.2.0.weight
+Transferring  speed_branch.layers.2.0.bias  to  speed_branch.layers.2.0.bias
+No Transfer of  branch.layers.0.0.weight  to  branches.branched_modules.0.layers.0.0.weight
+No Transfer of  branch.layers.0.0.bias  to  branches.branched_modules.0.layers.0.0.bias
+No Transfer of  branch.layers.1.0.weight  to  branches.branched_modules.0.layers.1.0.weight
+No Transfer of  branch.layers.1.0.bias  to  branches.branched_modules.0.layers.1.0.bias
+No Transfer of  branch.layers.2.0.weight  to  branches.branched_modules.0.layers.2.0.weight
+No Transfer of  branch.layers.2.0.bias  to  branches.branched_modules.0.layers.2.0.bias
+initialize network with normal
+initialize network with normal
+_netD(
+  (model): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (1): LeakyReLU(negative_slope=0.2, inplace)
+    (2): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (3): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (4): LeakyReLU(negative_slope=0.2, inplace)
+    (5): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (6): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (7): LeakyReLU(negative_slope=0.2, inplace)
+    (8): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (9): InstanceNorm2d(512, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (10): LeakyReLU(negative_slope=0.2, inplace)
+    (11): Conv2d(512, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (12): InstanceNorm2d(512, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (13): LeakyReLU(negative_slope=0.2, inplace)
+    (14): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1), padding=(1, 0))
+    (15): Sigmoid()
+  )
+)
+_netF(
+  (p1): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(3, 32, kernel_size=(5, 5), stride=(2, 2))
+          (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.2)
+          (3): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+        (2): Sequential(
+          (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (p2): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2))
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (p3): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (perception_bottom): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+    (1): FC(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Linear(in_features=8192, out_features=512, bias=True)
+          (1): Dropout2d(p=0.5)
+          (2): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=512, out_features=512, bias=True)
+          (1): Dropout2d(p=0.5)
+          (2): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (measurements): FC(
+    (layers): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=1, out_features=128, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+    )
+  )
+  (join): Join(
+    (after_process): FC(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Linear(in_features=640, out_features=512, bias=True)
+          (1): Dropout2d(p=0.5)
+          (2): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (speed_branch): FC(
+    (layers): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (2): Sequential(
+        (0): Linear(in_features=256, out_features=1, bias=True)
+        (1): Dropout2d(p=0.0)
+        (2): ReLU(inplace)
+      )
+    )
+  )
+  (branch): FC(
+    (layers): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (2): Sequential(
+        (0): Linear(in_features=256, out_features=3, bias=True)
+        (1): Dropout2d(p=0.0)
+      )
+    )
+  )
+)
+_netG(
+  (stage1_upsample): Sequential(
+    (0): ConvTranspose2d(256, 256, kernel_size=(7, 7), stride=(1, 1))
+    (1): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (2): ReLU(inplace)
+    (3): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (4): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (5): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+  )
+  (stage2_upsample): Sequential(
+    (0): ConvTranspose2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    (1): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (2): ReLU(inplace)
+    (3): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (4): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (5): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+  )
+  (stage3_upsample): Sequential(
+    (0): ConvTranspose2d(256, 128, kernel_size=(5, 5), stride=(2, 2))
+    (1): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (2): ReLU(inplace)
+    (3): ResnetBlock(
+      (conv_layer): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (4): ResnetBlock(
+      (conv_layer): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+  )
+  (stage4_upsample): Sequential(
+    (0): ConvTranspose2d(128, 3, kernel_size=(8, 8), stride=(2, 2))
+    (1): Sigmoid()
+  )
+)
+Branch Outputs::: tensor([ 0.8939, -1.5253, -0.9523], device='cuda:0')
+----------------
+Loss d tensor(0.6486, device='cuda:0')
+LossD 0.6486310958862305 LossG [100.0] BestLossD 0.6486310958862305 BestLossG 100.0 LossF tensor([ 100.]) BestLossF 100.0 Iteration 0 Best Loss Iteration G 0 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.7954,  0.7959,  0.4959], device='cuda:0')
+Loss d tensor(0.1934, device='cuda:0')
+LossD 0.19335287809371948 LossG [100.0] BestLossD 0.19335287809371948 BestLossG 100.0 LossF tensor([ 100.]) BestLossF 100.0 Iteration 1 Best Loss Iteration G 0 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.1345,  0.3219, -0.2035], device='cuda:0')
+Loss d tensor(0.2178, device='cuda:0')
+LossD 0.21775616705417633 LossG [100.0] BestLossD 0.19335287809371948 BestLossG 100.0 LossF tensor([ 100.]) BestLossF 100.0 Iteration 2 Best Loss Iteration G 0 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.8782,  0.6317,  0.3966], device='cuda:0')
+Loss d tensor(0.1532, device='cuda:0')
+LossD 0.15321913361549377 LossG [100.0] BestLossD 0.15321913361549377 BestLossG 100.0 LossF tensor([ 100.]) BestLossF 100.0 Iteration 3 Best Loss Iteration G 0 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.1926,  0.9254,  0.4663], device='cuda:0')
+Loss d tensor(0.2004, device='cuda:0')
+tensor(1.00000e-02 *
+       -2.9638, device='cuda:0')
+LossD 0.2004193365573883 LossG -0.029638083651661873 BestLossD 0.15321913361549377 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 4 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.2172, -0.0718,  0.0164], device='cuda:0')
+Loss d tensor(0.1865, device='cuda:0')
+LossD 0.18651354312896729 LossG -0.029638083651661873 BestLossD 0.15321913361549377 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 5 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.0411,  0.2104, -0.0441], device='cuda:0')
+Loss d tensor(0.1725, device='cuda:0')
+LossD 0.1724996268749237 LossG -0.029638083651661873 BestLossD 0.15321913361549377 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 6 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.1425,  0.3043,  0.4581], device='cuda:0')
+Loss d tensor(0.1334, device='cuda:0')
+LossD 0.13343782722949982 LossG -0.029638083651661873 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 7 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.6091,  1.1825,  0.0563], device='cuda:0')
+Loss d tensor(0.1576, device='cuda:0')
+LossD 0.15762029588222504 LossG -0.029638083651661873 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 8 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.5625,  0.4985,  0.4867], device='cuda:0')
+Loss d tensor(0.1585, device='cuda:0')
+tensor(1.00000e-02 *
+       -2.5528, device='cuda:0')
+LossD 0.15849639475345612 LossG -0.025527575984597206 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 9 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.1767, -0.3395,  0.2021], device='cuda:0')
+Loss d tensor(0.1966, device='cuda:0')
+LossD 0.19656892120838165 LossG -0.025527575984597206 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 10 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.8596,  0.2352,  0.5337], device='cuda:0')
+Loss d tensor(0.1979, device='cuda:0')
+LossD 0.19790305197238922 LossG -0.025527575984597206 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 11 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.1071,  0.2072,  0.4480], device='cuda:0')
+Loss d tensor(0.2337, device='cuda:0')
+LossD 0.23371002078056335 LossG -0.025527575984597206 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 12 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.6179,  0.8129,  0.2107], device='cuda:0')
+Loss d tensor(0.1962, device='cuda:0')
+LossD 0.19615538418293 LossG -0.025527575984597206 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 13 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.1648,  0.6378, -0.0224], device='cuda:0')
+Loss d tensor(0.1847, device='cuda:0')
+tensor(1.00000e-02 *
+       -2.1045, device='cuda:0')
+LossD 0.18473127484321594 LossG -0.021044978871941566 BestLossD 0.13343782722949982 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 14 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.0747,  1.0118,  0.3454], device='cuda:0')
+Loss d tensor(0.1197, device='cuda:0')
+LossD 0.11969148367643356 LossG -0.021044978871941566 BestLossD 0.11969148367643356 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 15 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.1300,  0.3831,  0.5188], device='cuda:0')
+Loss d tensor(0.1613, device='cuda:0')
+LossD 0.1612543910741806 LossG -0.021044978871941566 BestLossD 0.11969148367643356 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 16 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.6483,  1.2142,  0.0280], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       7.8125, device='cuda:0')
+LossD 0.07812478393316269 LossG -0.021044978871941566 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 17 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.4145,  0.0171,  0.0815], device='cuda:0')
+Loss d tensor(0.1754, device='cuda:0')
+LossD 0.1754360944032669 LossG -0.021044978871941566 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 18 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.2339, -0.0801, -0.0705], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       9.2913, device='cuda:0')
+tensor(1.00000e-02 *
+       -2.1109, device='cuda:0')
+LossD 0.09291348606348038 LossG -0.02110922522842884 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 19 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.0180,  0.7747,  0.4409], device='cuda:0')
+Loss d tensor(0.1196, device='cuda:0')
+LossD 0.11957848817110062 LossG -0.02110922522842884 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 20 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.2311,  3.7455, -1.7326], device='cuda:0')
+Loss d tensor(0.1199, device='cuda:0')
+LossD 0.11994358897209167 LossG -0.02110922522842884 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 21 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.2779,  0.7591,  0.1809], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       9.7601, device='cuda:0')
+LossD 0.09760050475597382 LossG -0.02110922522842884 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 22 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.5030,  0.2288,  1.0292], device='cuda:0')
+Loss d tensor(0.1023, device='cuda:0')
+LossD 0.10225776582956314 LossG -0.02110922522842884 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 23 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-0.8556,  0.2885,  0.8347], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       8.8973, device='cuda:0')
+tensor(1.00000e-02 *
+       -1.9058, device='cuda:0')
+LossD 0.08897272497415543 LossG -0.019057603552937508 BestLossD 0.07812478393316269 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 24 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.1693,  0.5311,  0.0195], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       7.5133, device='cuda:0')
+LossD 0.07513342797756195 LossG -0.019057603552937508 BestLossD 0.07513342797756195 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 25 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([-1.3828,  0.1513,  0.9120], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       8.7187, device='cuda:0')
+LossD 0.08718652278184891 LossG -0.019057603552937508 BestLossD 0.07513342797756195 BestLossG -0.029638083651661873 LossF tensor([ 100.]) BestLossF 100.0 Iteration 26 Best Loss Iteration G 4 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 1.7831,  0.4678,  0.8034], device='cuda:0')
+Loss d tensor(1.00000e-02 *
+       6.8198, device='cuda:0')

@@ -1,0 +1,1600 @@
+steer shape (50000,)
+labels shape  (50000,)
+Configurations of  exp_WGAN_PretrainedF_IL
+GANMODEL_NAME LSDcontrol_task
+LOSS_FUNCTION LSGAN
+LR_G, LR_D, LR 5e-05 5e-05 0.0002
+SKIP 0
+TYPE task
+L1 WEIGHT 0.0
+LAB SMOOTH 0
+Transferring  p1.0.layers.0.0.weight  to  perception.0.layers.0.0.weight
+Transferring  p1.0.layers.0.0.bias  to  perception.0.layers.0.0.bias
+Transferring  p1.0.layers.0.1.weight  to  perception.0.layers.0.1.weight
+Transferring  p1.0.layers.0.1.bias  to  perception.0.layers.0.1.bias
+Transferring  p1.0.layers.0.1.running_mean  to  perception.0.layers.0.1.running_mean
+Transferring  p1.0.layers.0.1.running_var  to  perception.0.layers.0.1.running_var
+Transferring  p1.0.layers.1.0.weight  to  perception.0.layers.1.0.weight
+Transferring  p1.0.layers.1.0.bias  to  perception.0.layers.1.0.bias
+Transferring  p1.0.layers.1.1.weight  to  perception.0.layers.1.1.weight
+Transferring  p1.0.layers.1.1.bias  to  perception.0.layers.1.1.bias
+Transferring  p1.0.layers.1.1.running_mean  to  perception.0.layers.1.1.running_mean
+Transferring  p1.0.layers.1.1.running_var  to  perception.0.layers.1.1.running_var
+Transferring  p1.0.layers.2.0.weight  to  perception.0.layers.2.0.weight
+Transferring  p1.0.layers.2.0.bias  to  perception.0.layers.2.0.bias
+Transferring  p1.0.layers.2.1.weight  to  perception.0.layers.2.1.weight
+Transferring  p1.0.layers.2.1.bias  to  perception.0.layers.2.1.bias
+Transferring  p1.0.layers.2.1.running_mean  to  perception.0.layers.2.1.running_mean
+Transferring  p1.0.layers.2.1.running_var  to  perception.0.layers.2.1.running_var
+Transferring  p2.0.layers.0.0.weight  to  perception.0.layers.3.0.weight
+Transferring  p2.0.layers.0.0.bias  to  perception.0.layers.3.0.bias
+Transferring  p2.0.layers.0.1.weight  to  perception.0.layers.3.1.weight
+Transferring  p2.0.layers.0.1.bias  to  perception.0.layers.3.1.bias
+Transferring  p2.0.layers.0.1.running_mean  to  perception.0.layers.3.1.running_mean
+Transferring  p2.0.layers.0.1.running_var  to  perception.0.layers.3.1.running_var
+Transferring  p2.0.layers.1.0.weight  to  perception.0.layers.4.0.weight
+Transferring  p2.0.layers.1.0.bias  to  perception.0.layers.4.0.bias
+Transferring  p2.0.layers.1.1.weight  to  perception.0.layers.4.1.weight
+Transferring  p2.0.layers.1.1.bias  to  perception.0.layers.4.1.bias
+Transferring  p2.0.layers.1.1.running_mean  to  perception.0.layers.4.1.running_mean
+Transferring  p2.0.layers.1.1.running_var  to  perception.0.layers.4.1.running_var
+Transferring  p3.0.layers.0.0.weight  to  perception.0.layers.5.0.weight
+Transferring  p3.0.layers.0.0.bias  to  perception.0.layers.5.0.bias
+Transferring  p3.0.layers.0.1.weight  to  perception.0.layers.5.1.weight
+Transferring  p3.0.layers.0.1.bias  to  perception.0.layers.5.1.bias
+Transferring  p3.0.layers.0.1.running_mean  to  perception.0.layers.5.1.running_mean
+Transferring  p3.0.layers.0.1.running_var  to  perception.0.layers.5.1.running_var
+Transferring  p3.0.layers.1.0.weight  to  perception.0.layers.6.0.weight
+Transferring  p3.0.layers.1.0.bias  to  perception.0.layers.6.0.bias
+Transferring  p3.0.layers.1.1.weight  to  perception.0.layers.6.1.weight
+Transferring  p3.0.layers.1.1.bias  to  perception.0.layers.6.1.bias
+Transferring  p3.0.layers.1.1.running_mean  to  perception.0.layers.6.1.running_mean
+Transferring  p3.0.layers.1.1.running_var  to  perception.0.layers.6.1.running_var
+Transferring  perception_bottom.0.layers.0.0.weight  to  perception.0.layers.7.0.weight
+Transferring  perception_bottom.0.layers.0.0.bias  to  perception.0.layers.7.0.bias
+Transferring  perception_bottom.0.layers.0.1.weight  to  perception.0.layers.7.1.weight
+Transferring  perception_bottom.0.layers.0.1.bias  to  perception.0.layers.7.1.bias
+Transferring  perception_bottom.0.layers.0.1.running_mean  to  perception.0.layers.7.1.running_mean
+Transferring  perception_bottom.0.layers.0.1.running_var  to  perception.0.layers.7.1.running_var
+Transferring  perception_bottom.1.layers.0.0.weight  to  perception.1.layers.0.0.weight
+Transferring  perception_bottom.1.layers.0.0.bias  to  perception.1.layers.0.0.bias
+Transferring  perception_bottom.1.layers.1.0.weight  to  perception.1.layers.1.0.weight
+Transferring  perception_bottom.1.layers.1.0.bias  to  perception.1.layers.1.0.bias
+Transferring  measurements.layers.0.0.weight  to  measurements.layers.0.0.weight
+Transferring  measurements.layers.0.0.bias  to  measurements.layers.0.0.bias
+Transferring  measurements.layers.1.0.weight  to  measurements.layers.1.0.weight
+Transferring  measurements.layers.1.0.bias  to  measurements.layers.1.0.bias
+Transferring  join.after_process.layers.0.0.weight  to  join.after_process.layers.0.0.weight
+Transferring  join.after_process.layers.0.0.bias  to  join.after_process.layers.0.0.bias
+Transferring  speed_branch.layers.0.0.weight  to  speed_branch.layers.0.0.weight
+Transferring  speed_branch.layers.0.0.bias  to  speed_branch.layers.0.0.bias
+Transferring  speed_branch.layers.1.0.weight  to  speed_branch.layers.1.0.weight
+Transferring  speed_branch.layers.1.0.bias  to  speed_branch.layers.1.0.bias
+Transferring  speed_branch.layers.2.0.weight  to  speed_branch.layers.2.0.weight
+Transferring  speed_branch.layers.2.0.bias  to  speed_branch.layers.2.0.bias
+No Transfer of  branch.layers.0.0.weight  to  branches.branched_modules.0.layers.0.0.weight
+No Transfer of  branch.layers.0.0.bias  to  branches.branched_modules.0.layers.0.0.bias
+No Transfer of  branch.layers.1.0.weight  to  branches.branched_modules.0.layers.1.0.weight
+No Transfer of  branch.layers.1.0.bias  to  branches.branched_modules.0.layers.1.0.bias
+No Transfer of  branch.layers.2.0.weight  to  branches.branched_modules.0.layers.2.0.weight
+No Transfer of  branch.layers.2.0.bias  to  branches.branched_modules.0.layers.2.0.bias
+initialize network with normal
+initialize network with normal
+_netD(
+  (model): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (1): LeakyReLU(negative_slope=0.2, inplace)
+    (2): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (3): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (4): LeakyReLU(negative_slope=0.2, inplace)
+    (5): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (6): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (7): LeakyReLU(negative_slope=0.2, inplace)
+    (8): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (9): InstanceNorm2d(512, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (10): LeakyReLU(negative_slope=0.2, inplace)
+    (11): Conv2d(512, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 0))
+    (12): InstanceNorm2d(512, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (13): LeakyReLU(negative_slope=0.2, inplace)
+    (14): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1), padding=(1, 0))
+  )
+)
+_netF(
+  (p1): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(3, 32, kernel_size=(5, 5), stride=(2, 2))
+          (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.2)
+          (3): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+        (2): Sequential(
+          (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (p2): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2))
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (p3): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (perception_bottom): Sequential(
+    (0): Conv(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1))
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout2d(p=0.4)
+          (3): ReLU(inplace)
+        )
+      )
+    )
+    (1): FC(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Linear(in_features=8192, out_features=512, bias=True)
+          (1): Dropout2d(p=0.5)
+          (2): ReLU(inplace)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=512, out_features=512, bias=True)
+          (1): Dropout2d(p=0.5)
+          (2): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (measurements): FC(
+    (layers): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=1, out_features=128, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+    )
+  )
+  (join): Join(
+    (after_process): FC(
+      (layers): Sequential(
+        (0): Sequential(
+          (0): Linear(in_features=640, out_features=512, bias=True)
+          (1): Dropout2d(p=0.5)
+          (2): ReLU(inplace)
+        )
+      )
+    )
+  )
+  (speed_branch): FC(
+    (layers): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (2): Sequential(
+        (0): Linear(in_features=256, out_features=1, bias=True)
+        (1): Dropout2d(p=0.0)
+        (2): ReLU(inplace)
+      )
+    )
+  )
+  (branch): FC(
+    (layers): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Dropout2d(p=0.5)
+        (2): ReLU(inplace)
+      )
+      (2): Sequential(
+        (0): Linear(in_features=256, out_features=3, bias=True)
+        (1): Dropout2d(p=0.0)
+      )
+    )
+  )
+)
+_netG(
+  (stage1_upsample): Sequential(
+    (0): ConvTranspose2d(256, 256, kernel_size=(7, 7), stride=(1, 1))
+    (1): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (2): ReLU(inplace)
+    (3): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (4): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (5): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+  )
+  (stage2_upsample): Sequential(
+    (0): ConvTranspose2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    (1): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (2): ReLU(inplace)
+    (3): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (4): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (5): ResnetBlock(
+      (conv_layer): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+  )
+  (stage3_upsample): Sequential(
+    (0): ConvTranspose2d(256, 128, kernel_size=(5, 5), stride=(2, 2))
+    (1): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    (2): ReLU(inplace)
+    (3): ResnetBlock(
+      (conv_layer): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+    (4): ResnetBlock(
+      (conv_layer): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (dropout): Dropout(p=0.5)
+      (activation): ReLU(inplace)
+      (normalization_layer): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False)
+    )
+  )
+  (stage4_upsample): Sequential(
+    (0): ConvTranspose2d(128, 3, kernel_size=(8, 8), stride=(2, 2))
+    (1): Sigmoid()
+  )
+)
+Branch Outputs::: tensor([ 0.4262,  0.1649, -0.1886], device='cuda:0')
+----------------
+Loss d tensor(-0.2042, device='cuda:0')
+LossD -0.2042461633682251 LossG [100.0] BestLossD -0.2042461633682251 BestLossG 100.0 LossF tensor(0.9470, device='cuda:0') BestLossF 0.9470122456550598 Iteration 0 Best Loss Iteration G 0 Best Loss Iteration F 0
+Branch Outputs::: tensor([ 0.4535,  0.2632,  0.5493], device='cuda:0')
+Loss d tensor(-0.1915, device='cuda:0')
+LossD -0.191465824842453 LossG [100.0] BestLossD -0.2042461633682251 BestLossG 100.0 LossF tensor(0.7299, device='cuda:0') BestLossF 0.7299097776412964 Iteration 1 Best Loss Iteration G 0 Best Loss Iteration F 1
+Branch Outputs::: tensor([-0.0315,  0.4263, -0.4581], device='cuda:0')
+Loss d tensor(-1.1150, device='cuda:0')
+LossD -1.1149952411651611 LossG [100.0] BestLossD -1.1149952411651611 BestLossG 100.0 LossF tensor(0.9600, device='cuda:0') BestLossF 0.7299097776412964 Iteration 2 Best Loss Iteration G 0 Best Loss Iteration F 1
+Branch Outputs::: tensor([ 0.2649,  0.3852,  0.2813], device='cuda:0')
+Loss d tensor(-2.1694, device='cuda:0')
+LossD -2.169419765472412 LossG [100.0] BestLossD -2.169419765472412 BestLossG 100.0 LossF tensor(0.7442, device='cuda:0') BestLossF 0.7299097776412964 Iteration 3 Best Loss Iteration G 0 Best Loss Iteration F 1
+Branch Outputs::: tensor([ 0.2950, -0.1534, -0.0013], device='cuda:0')
+Loss d tensor(-3.0248, device='cuda:0')
+tensor(2.1078, device='cuda:0')
+LossD -3.0247621536254883 LossG 2.107762575149536 BestLossD -3.0247621536254883 BestLossG 2.107762575149536 LossF tensor(0.4826, device='cuda:0') BestLossF 0.48261046409606934 Iteration 4 Best Loss Iteration G 4 Best Loss Iteration F 4
+Branch Outputs::: tensor([-0.1492,  0.2153,  0.1336], device='cuda:0')
+Loss d tensor(-3.7203, device='cuda:0')
+LossD -3.720339298248291 LossG 2.107762575149536 BestLossD -3.720339298248291 BestLossG 2.107762575149536 LossF tensor(0.4799, device='cuda:0') BestLossF 0.47988492250442505 Iteration 5 Best Loss Iteration G 4 Best Loss Iteration F 5
+Branch Outputs::: tensor([-0.6538, -0.6835,  0.8214], device='cuda:0')
+Loss d tensor(-5.0650, device='cuda:0')
+LossD -5.0650177001953125 LossG 2.107762575149536 BestLossD -5.0650177001953125 BestLossG 2.107762575149536 LossF tensor(0.5591, device='cuda:0') BestLossF 0.47988492250442505 Iteration 6 Best Loss Iteration G 4 Best Loss Iteration F 5
+Branch Outputs::: tensor([ 0.2014,  0.7928, -0.1646], device='cuda:0')
+Loss d tensor(-6.1533, device='cuda:0')
+LossD -6.153309345245361 LossG 2.107762575149536 BestLossD -6.153309345245361 BestLossG 2.107762575149536 LossF tensor(0.4507, device='cuda:0') BestLossF 0.4507266879081726 Iteration 7 Best Loss Iteration G 4 Best Loss Iteration F 7
+Branch Outputs::: tensor([ 0.1522,  1.1064,  0.0400], device='cuda:0')
+Loss d tensor(-7.7210, device='cuda:0')
+LossD -7.721036911010742 LossG 2.107762575149536 BestLossD -7.721036911010742 BestLossG 2.107762575149536 LossF tensor(0.4961, device='cuda:0') BestLossF 0.4507266879081726 Iteration 8 Best Loss Iteration G 4 Best Loss Iteration F 7
+Branch Outputs::: tensor([ 1.1560,  2.0990,  0.7153], device='cuda:0')
+Loss d tensor(-8.6910, device='cuda:0')
+tensor(4.9143, device='cuda:0')
+LossD -8.690990447998047 LossG 4.9142680168151855 BestLossD -8.690990447998047 BestLossG 2.107762575149536 LossF tensor(0.6841, device='cuda:0') BestLossF 0.4507266879081726 Iteration 9 Best Loss Iteration G 4 Best Loss Iteration F 7
+Branch Outputs::: tensor([-0.4259,  0.4093, -0.1207], device='cuda:0')
+Loss d tensor(-9.2205, device='cuda:0')
+LossD -9.220460891723633 LossG 4.9142680168151855 BestLossD -9.220460891723633 BestLossG 2.107762575149536 LossF tensor(0.3112, device='cuda:0') BestLossF 0.3111818730831146 Iteration 10 Best Loss Iteration G 4 Best Loss Iteration F 10
+Branch Outputs::: tensor([ 0.0992,  0.5141, -0.5169], device='cuda:0')
+Loss d tensor(-10.9532, device='cuda:0')
+LossD -10.953205108642578 LossG 4.9142680168151855 BestLossD -10.953205108642578 BestLossG 2.107762575149536 LossF tensor(0.4366, device='cuda:0') BestLossF 0.3111818730831146 Iteration 11 Best Loss Iteration G 4 Best Loss Iteration F 10
+Branch Outputs::: tensor([ 0.4463,  0.2730, -0.1073], device='cuda:0')
+Loss d tensor(-11.8623, device='cuda:0')
+LossD -11.86225700378418 LossG 4.9142680168151855 BestLossD -11.86225700378418 BestLossG 2.107762575149536 LossF tensor(0.3372, device='cuda:0') BestLossF 0.3111818730831146 Iteration 12 Best Loss Iteration G 4 Best Loss Iteration F 10
+Branch Outputs::: tensor([-0.5697,  1.0142, -0.2314], device='cuda:0')
+Loss d tensor(-13.0270, device='cuda:0')
+LossD -13.026998519897461 LossG 4.9142680168151855 BestLossD -13.026998519897461 BestLossG 2.107762575149536 LossF tensor(0.3402, device='cuda:0') BestLossF 0.3111818730831146 Iteration 13 Best Loss Iteration G 4 Best Loss Iteration F 10
+Branch Outputs::: tensor([ 0.1026,  0.7416, -0.0678], device='cuda:0')
+Loss d tensor(-15.1717, device='cuda:0')
+tensor(8.0192, device='cuda:0')
+LossD -15.171680450439453 LossG 8.019160270690918 BestLossD -15.171680450439453 BestLossG 2.107762575149536 LossF tensor(0.4269, device='cuda:0') BestLossF 0.3111818730831146 Iteration 14 Best Loss Iteration G 4 Best Loss Iteration F 10
+Branch Outputs::: tensor([-0.0734,  0.3143,  0.0436], device='cuda:0')
+Loss d tensor(-14.2300, device='cuda:0')
+LossD -14.230018615722656 LossG 8.019160270690918 BestLossD -15.171680450439453 BestLossG 2.107762575149536 LossF tensor(0.2391, device='cuda:0') BestLossF 0.23906031250953674 Iteration 15 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.3958,  0.4318, -0.0974], device='cuda:0')
+Loss d tensor(-15.2557, device='cuda:0')
+LossD -15.255704879760742 LossG 8.019160270690918 BestLossD -15.255704879760742 BestLossG 2.107762575149536 LossF tensor(0.2625, device='cuda:0') BestLossF 0.23906031250953674 Iteration 16 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.1122,  1.0998, -0.2874], device='cuda:0')
+Loss d tensor(-16.5875, device='cuda:0')
+LossD -16.587539672851562 LossG 8.019160270690918 BestLossD -16.587539672851562 BestLossG 2.107762575149536 LossF tensor(0.3643, device='cuda:0') BestLossF 0.23906031250953674 Iteration 17 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.3400,  1.0542,  1.0249], device='cuda:0')
+Loss d tensor(-16.4143, device='cuda:0')
+LossD -16.41434097290039 LossG 8.019160270690918 BestLossD -16.587539672851562 BestLossG 2.107762575149536 LossF tensor(0.3252, device='cuda:0') BestLossF 0.23906031250953674 Iteration 18 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.5970,  1.2378,  0.2922], device='cuda:0')
+Loss d tensor(-17.0404, device='cuda:0')
+tensor(8.8147, device='cuda:0')
+LossD -17.04043960571289 LossG 8.814749717712402 BestLossD -17.04043960571289 BestLossG 2.107762575149536 LossF tensor(0.2883, device='cuda:0') BestLossF 0.23906031250953674 Iteration 19 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.0589,  1.2377,  0.2460], device='cuda:0')
+Loss d tensor(-14.7025, device='cuda:0')
+LossD -14.702465057373047 LossG 8.814749717712402 BestLossD -17.04043960571289 BestLossG 2.107762575149536 LossF tensor(0.3078, device='cuda:0') BestLossF 0.23906031250953674 Iteration 20 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.5111,  1.1482, -0.3371], device='cuda:0')
+Loss d tensor(-16.0417, device='cuda:0')
+LossD -16.04167938232422 LossG 8.814749717712402 BestLossD -17.04043960571289 BestLossG 2.107762575149536 LossF tensor(0.4503, device='cuda:0') BestLossF 0.23906031250953674 Iteration 21 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.2029,  0.7069, -0.3115], device='cuda:0')
+Loss d tensor(-17.8621, device='cuda:0')
+LossD -17.862098693847656 LossG 8.814749717712402 BestLossD -17.862098693847656 BestLossG 2.107762575149536 LossF tensor(0.3027, device='cuda:0') BestLossF 0.23906031250953674 Iteration 22 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.1159,  0.8338,  0.2716], device='cuda:0')
+Loss d tensor(-19.8633, device='cuda:0')
+LossD -19.863262176513672 LossG 8.814749717712402 BestLossD -19.863262176513672 BestLossG 2.107762575149536 LossF tensor(0.2790, device='cuda:0') BestLossF 0.23906031250953674 Iteration 23 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.1587,  0.7328,  0.1107], device='cuda:0')
+Loss d tensor(-18.7714, device='cuda:0')
+tensor(8.9897, device='cuda:0')
+LossD -18.771411895751953 LossG 8.989681243896484 BestLossD -19.863262176513672 BestLossG 2.107762575149536 LossF tensor(0.2890, device='cuda:0') BestLossF 0.23906031250953674 Iteration 24 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-1.0637,  0.7582,  1.3199], device='cuda:0')
+Loss d tensor(-18.7021, device='cuda:0')
+LossD -18.702117919921875 LossG 8.989681243896484 BestLossD -19.863262176513672 BestLossG 2.107762575149536 LossF tensor(0.2413, device='cuda:0') BestLossF 0.23906031250953674 Iteration 25 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.2661,  0.8287,  0.1591], device='cuda:0')
+Loss d tensor(-20.2210, device='cuda:0')
+LossD -20.22100830078125 LossG 8.989681243896484 BestLossD -20.22100830078125 BestLossG 2.107762575149536 LossF tensor(0.3352, device='cuda:0') BestLossF 0.23906031250953674 Iteration 26 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.2036,  0.5604,  0.2862], device='cuda:0')
+Loss d tensor(-19.7917, device='cuda:0')
+LossD -19.791719436645508 LossG 8.989681243896484 BestLossD -20.22100830078125 BestLossG 2.107762575149536 LossF tensor(0.2827, device='cuda:0') BestLossF 0.23906031250953674 Iteration 27 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.3444,  0.7237,  0.3838], device='cuda:0')
+Loss d tensor(-20.6068, device='cuda:0')
+LossD -20.606836318969727 LossG 8.989681243896484 BestLossD -20.606836318969727 BestLossG 2.107762575149536 LossF tensor(0.3547, device='cuda:0') BestLossF 0.23906031250953674 Iteration 28 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.5319,  0.6458,  0.1303], device='cuda:0')
+Loss d tensor(-21.5012, device='cuda:0')
+tensor(10.1808, device='cuda:0')
+LossD -21.501235961914062 LossG 10.180769920349121 BestLossD -21.501235961914062 BestLossG 2.107762575149536 LossF tensor(0.3529, device='cuda:0') BestLossF 0.23906031250953674 Iteration 29 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.4717,  1.0372,  0.4409], device='cuda:0')
+Loss d tensor(-20.5553, device='cuda:0')
+LossD -20.555259704589844 LossG 10.180769920349121 BestLossD -21.501235961914062 BestLossG 2.107762575149536 LossF tensor(0.2513, device='cuda:0') BestLossF 0.23906031250953674 Iteration 30 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.7272,  0.9628,  0.0978], device='cuda:0')
+Loss d tensor(-21.5055, device='cuda:0')
+LossD -21.505516052246094 LossG 10.180769920349121 BestLossD -21.505516052246094 BestLossG 2.107762575149536 LossF tensor(0.3064, device='cuda:0') BestLossF 0.23906031250953674 Iteration 31 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.8302,  0.7829, -0.3420], device='cuda:0')
+Loss d tensor(-22.2250, device='cuda:0')
+LossD -22.224950790405273 LossG 10.180769920349121 BestLossD -22.224950790405273 BestLossG 2.107762575149536 LossF tensor(0.2616, device='cuda:0') BestLossF 0.23906031250953674 Iteration 32 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([-0.9539,  0.8222, -0.8067], device='cuda:0')
+Loss d tensor(-23.0918, device='cuda:0')
+LossD -23.091785430908203 LossG 10.180769920349121 BestLossD -23.091785430908203 BestLossG 2.107762575149536 LossF tensor(0.2423, device='cuda:0') BestLossF 0.23906031250953674 Iteration 33 Best Loss Iteration G 4 Best Loss Iteration F 15
+Branch Outputs::: tensor([ 0.0344,  1.1051, -0.0036], device='cuda:0')
+Loss d tensor(-22.5735, device='cuda:0')
+tensor(11.3070, device='cuda:0')
+LossD -22.573474884033203 LossG 11.306962013244629 BestLossD -23.091785430908203 BestLossG 2.107762575149536 LossF tensor(0.2208, device='cuda:0') BestLossF 0.22076089680194855 Iteration 34 Best Loss Iteration G 4 Best Loss Iteration F 34
+Branch Outputs::: tensor([-0.0872,  1.6695,  0.0734], device='cuda:0')
+Loss d tensor(-23.6274, device='cuda:0')
+LossD -23.62741470336914 LossG 11.306962013244629 BestLossD -23.62741470336914 BestLossG 2.107762575149536 LossF tensor(0.2234, device='cuda:0') BestLossF 0.22076089680194855 Iteration 35 Best Loss Iteration G 4 Best Loss Iteration F 34
+Branch Outputs::: tensor([ 0.2702,  0.6937,  0.2256], device='cuda:0')
+Loss d tensor(-24.4447, device='cuda:0')
+LossD -24.444665908813477 LossG 11.306962013244629 BestLossD -24.444665908813477 BestLossG 2.107762575149536 LossF tensor(0.1631, device='cuda:0') BestLossF 0.1630774885416031 Iteration 36 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([ 0.6229,  1.2404, -0.2507], device='cuda:0')
+Loss d tensor(-24.7730, device='cuda:0')
+LossD -24.77301025390625 LossG 11.306962013244629 BestLossD -24.77301025390625 BestLossG 2.107762575149536 LossF tensor(0.2414, device='cuda:0') BestLossF 0.1630774885416031 Iteration 37 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([-0.1560, -0.0083, -0.3660], device='cuda:0')
+Loss d tensor(-25.0536, device='cuda:0')
+LossD -25.053550720214844 LossG 11.306962013244629 BestLossD -25.053550720214844 BestLossG 2.107762575149536 LossF tensor(0.2641, device='cuda:0') BestLossF 0.1630774885416031 Iteration 38 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([ 0.3455,  1.0314, -0.0845], device='cuda:0')
+Loss d tensor(-24.9124, device='cuda:0')
+tensor(12.4521, device='cuda:0')
+LossD -24.91238021850586 LossG 12.452062606811523 BestLossD -25.053550720214844 BestLossG 2.107762575149536 LossF tensor(0.1970, device='cuda:0') BestLossF 0.1630774885416031 Iteration 39 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([-0.3547,  1.6792, -0.2007], device='cuda:0')
+Loss d tensor(-25.9164, device='cuda:0')
+LossD -25.916366577148438 LossG 12.452062606811523 BestLossD -25.916366577148438 BestLossG 2.107762575149536 LossF tensor(0.1902, device='cuda:0') BestLossF 0.1630774885416031 Iteration 40 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([-0.0014,  0.7679, -0.2310], device='cuda:0')
+Loss d tensor(-25.1822, device='cuda:0')
+LossD -25.182231903076172 LossG 12.452062606811523 BestLossD -25.916366577148438 BestLossG 2.107762575149536 LossF tensor(0.2220, device='cuda:0') BestLossF 0.1630774885416031 Iteration 41 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([ 1.6089,  1.3351, -0.6930], device='cuda:0')
+Loss d tensor(-25.4207, device='cuda:0')
+LossD -25.420692443847656 LossG 12.452062606811523 BestLossD -25.916366577148438 BestLossG 2.107762575149536 LossF tensor(0.1762, device='cuda:0') BestLossF 0.1630774885416031 Iteration 42 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([ 0.1692,  0.2568, -0.3488], device='cuda:0')
+Loss d tensor(-26.4815, device='cuda:0')
+LossD -26.481521606445312 LossG 12.452062606811523 BestLossD -26.481521606445312 BestLossG 2.107762575149536 LossF tensor(0.2041, device='cuda:0') BestLossF 0.1630774885416031 Iteration 43 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([ 0.2739,  1.0972,  0.4774], device='cuda:0')
+Loss d tensor(-25.1106, device='cuda:0')
+tensor(12.1690, device='cuda:0')
+LossD -25.110591888427734 LossG 12.16903305053711 BestLossD -26.481521606445312 BestLossG 2.107762575149536 LossF tensor(0.1854, device='cuda:0') BestLossF 0.1630774885416031 Iteration 44 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([-0.0996,  0.4148, -0.0218], device='cuda:0')
+Loss d tensor(-26.1599, device='cuda:0')
+LossD -26.15990447998047 LossG 12.16903305053711 BestLossD -26.481521606445312 BestLossG 2.107762575149536 LossF tensor(0.1944, device='cuda:0') BestLossF 0.1630774885416031 Iteration 45 Best Loss Iteration G 4 Best Loss Iteration F 36
+Branch Outputs::: tensor([-0.4656,  1.1058,  0.4153], device='cuda:0')
+Loss d tensor(-24.9236, device='cuda:0')
+LossD -24.9235782623291 LossG 12.16903305053711 BestLossD -26.481521606445312 BestLossG 2.107762575149536 LossF tensor(0.1287, device='cuda:0') BestLossF 0.12872451543807983 Iteration 46 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.1404,  1.2359, -0.0504], device='cuda:0')
+Loss d tensor(-26.9395, device='cuda:0')
+LossD -26.939523696899414 LossG 12.16903305053711 BestLossD -26.939523696899414 BestLossG 2.107762575149536 LossF tensor(0.2527, device='cuda:0') BestLossF 0.12872451543807983 Iteration 47 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.4907,  0.9087,  0.1281], device='cuda:0')
+Loss d tensor(-26.0592, device='cuda:0')
+LossD -26.05923843383789 LossG 12.16903305053711 BestLossD -26.939523696899414 BestLossG 2.107762575149536 LossF tensor(0.2197, device='cuda:0') BestLossF 0.12872451543807983 Iteration 48 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.1344,  0.7964,  0.2950], device='cuda:0')
+Loss d tensor(-27.4671, device='cuda:0')
+tensor(13.6257, device='cuda:0')
+LossD -27.467056274414062 LossG 13.62572193145752 BestLossD -27.467056274414062 BestLossG 2.107762575149536 LossF tensor(0.2268, device='cuda:0') BestLossF 0.12872451543807983 Iteration 49 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-1.2995,  0.7379, -0.0826], device='cuda:0')
+Loss d tensor(-27.1426, device='cuda:0')
+LossD -27.14255142211914 LossG 13.62572193145752 BestLossD -27.467056274414062 BestLossG 2.107762575149536 LossF tensor(0.1899, device='cuda:0') BestLossF 0.12872451543807983 Iteration 50 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-0.0396,  1.3029,  0.4749], device='cuda:0')
+Loss d tensor(-27.3108, device='cuda:0')
+LossD -27.310787200927734 LossG 13.62572193145752 BestLossD -27.467056274414062 BestLossG 2.107762575149536 LossF tensor(0.2080, device='cuda:0') BestLossF 0.12872451543807983 Iteration 51 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.8200,  0.7376,  0.0144], device='cuda:0')
+Loss d tensor(-26.1255, device='cuda:0')
+LossD -26.125545501708984 LossG 13.62572193145752 BestLossD -27.467056274414062 BestLossG 2.107762575149536 LossF tensor(0.1978, device='cuda:0') BestLossF 0.12872451543807983 Iteration 52 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-0.6032,  0.8399, -0.0277], device='cuda:0')
+Loss d tensor(-27.6570, device='cuda:0')
+LossD -27.65700912475586 LossG 13.62572193145752 BestLossD -27.65700912475586 BestLossG 2.107762575149536 LossF tensor(0.2360, device='cuda:0') BestLossF 0.12872451543807983 Iteration 53 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-0.2873,  0.3285,  0.0114], device='cuda:0')
+Loss d tensor(-27.1354, device='cuda:0')
+tensor(14.1949, device='cuda:0')
+LossD -27.135372161865234 LossG 14.194902420043945 BestLossD -27.65700912475586 BestLossG 2.107762575149536 LossF tensor(0.1443, device='cuda:0') BestLossF 0.12872451543807983 Iteration 54 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.6492,  0.7694, -0.2610], device='cuda:0')
+Loss d tensor(-28.1241, device='cuda:0')
+LossD -28.124114990234375 LossG 14.194902420043945 BestLossD -28.124114990234375 BestLossG 2.107762575149536 LossF tensor(0.2480, device='cuda:0') BestLossF 0.12872451543807983 Iteration 55 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-0.8259,  0.6967,  0.3929], device='cuda:0')
+Loss d tensor(-27.5994, device='cuda:0')
+LossD -27.599449157714844 LossG 14.194902420043945 BestLossD -28.124114990234375 BestLossG 2.107762575149536 LossF tensor(0.1918, device='cuda:0') BestLossF 0.12872451543807983 Iteration 56 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-0.4697,  1.1393,  0.1226], device='cuda:0')
+Loss d tensor(-28.7205, device='cuda:0')
+LossD -28.720548629760742 LossG 14.194902420043945 BestLossD -28.720548629760742 BestLossG 2.107762575149536 LossF tensor(0.1944, device='cuda:0') BestLossF 0.12872451543807983 Iteration 57 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.1443,  0.6860, -0.0271], device='cuda:0')
+Loss d tensor(-28.6144, device='cuda:0')
+LossD -28.614425659179688 LossG 14.194902420043945 BestLossD -28.720548629760742 BestLossG 2.107762575149536 LossF tensor(0.1775, device='cuda:0') BestLossF 0.12872451543807983 Iteration 58 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.3298,  0.7774,  0.0643], device='cuda:0')
+Loss d tensor(-27.5969, device='cuda:0')
+tensor(13.9926, device='cuda:0')
+LossD -27.596891403198242 LossG 13.992585182189941 BestLossD -28.720548629760742 BestLossG 2.107762575149536 LossF tensor(0.1815, device='cuda:0') BestLossF 0.12872451543807983 Iteration 59 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.2876,  1.1059, -0.4922], device='cuda:0')
+Loss d tensor(-27.2361, device='cuda:0')
+LossD -27.236080169677734 LossG 13.992585182189941 BestLossD -28.720548629760742 BestLossG 2.107762575149536 LossF tensor(0.1870, device='cuda:0') BestLossF 0.12872451543807983 Iteration 60 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.0554,  0.5796,  0.0068], device='cuda:0')
+Loss d tensor(-29.0932, device='cuda:0')
+LossD -29.093170166015625 LossG 13.992585182189941 BestLossD -29.093170166015625 BestLossG 2.107762575149536 LossF tensor(0.2613, device='cuda:0') BestLossF 0.12872451543807983 Iteration 61 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([-0.0909,  1.0651,  0.4202], device='cuda:0')
+Loss d tensor(-28.6206, device='cuda:0')
+LossD -28.620616912841797 LossG 13.992585182189941 BestLossD -29.093170166015625 BestLossG 2.107762575149536 LossF tensor(0.1603, device='cuda:0') BestLossF 0.12872451543807983 Iteration 62 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.3373,  0.9806, -0.1537], device='cuda:0')
+Loss d tensor(-29.9690, device='cuda:0')
+LossD -29.969009399414062 LossG 13.992585182189941 BestLossD -29.969009399414062 BestLossG 2.107762575149536 LossF tensor(0.2136, device='cuda:0') BestLossF 0.12872451543807983 Iteration 63 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.7026,  0.6999,  0.3573], device='cuda:0')
+Loss d tensor(-30.0532, device='cuda:0')
+tensor(14.9194, device='cuda:0')
+LossD -30.05323028564453 LossG 14.919426918029785 BestLossD -30.05323028564453 BestLossG 2.107762575149536 LossF tensor(0.1390, device='cuda:0') BestLossF 0.12872451543807983 Iteration 64 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.0263,  0.8837,  0.2329], device='cuda:0')
+Loss d tensor(-29.5531, device='cuda:0')
+LossD -29.553142547607422 LossG 14.919426918029785 BestLossD -30.05323028564453 BestLossG 2.107762575149536 LossF tensor(0.1456, device='cuda:0') BestLossF 0.12872451543807983 Iteration 65 Best Loss Iteration G 4 Best Loss Iteration F 46
+Branch Outputs::: tensor([ 0.5774,  1.0229, -0.0166], device='cuda:0')
+Loss d tensor(-28.8057, device='cuda:0')
+LossD -28.805715560913086 LossG 14.919426918029785 BestLossD -30.05323028564453 BestLossG 2.107762575149536 LossF tensor(0.1276, device='cuda:0') BestLossF 0.12760162353515625 Iteration 66 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.0331,  0.9937,  0.0419], device='cuda:0')
+Loss d tensor(-30.7976, device='cuda:0')
+LossD -30.797645568847656 LossG 14.919426918029785 BestLossD -30.797645568847656 BestLossG 2.107762575149536 LossF tensor(0.1401, device='cuda:0') BestLossF 0.12760162353515625 Iteration 67 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.8796,  1.1369, -0.1470], device='cuda:0')
+Loss d tensor(-31.5760, device='cuda:0')
+LossD -31.576030731201172 LossG 14.919426918029785 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1545, device='cuda:0') BestLossF 0.12760162353515625 Iteration 68 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.1042,  0.5944,  0.0510], device='cuda:0')
+Loss d tensor(-30.0538, device='cuda:0')
+tensor(14.3011, device='cuda:0')
+LossD -30.05378532409668 LossG 14.30112075805664 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1451, device='cuda:0') BestLossF 0.12760162353515625 Iteration 69 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.5453,  0.9200,  0.4389], device='cuda:0')
+Loss d tensor(-30.9420, device='cuda:0')
+LossD -30.942035675048828 LossG 14.30112075805664 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1698, device='cuda:0') BestLossF 0.12760162353515625 Iteration 70 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.4468,  0.8901, -0.0388], device='cuda:0')
+Loss d tensor(-28.7511, device='cuda:0')
+LossD -28.751142501831055 LossG 14.30112075805664 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1598, device='cuda:0') BestLossF 0.12760162353515625 Iteration 71 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.0254,  1.3975, -0.3088], device='cuda:0')
+Loss d tensor(-30.2508, device='cuda:0')
+LossD -30.250755310058594 LossG 14.30112075805664 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1773, device='cuda:0') BestLossF 0.12760162353515625 Iteration 72 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.0465,  0.2687, -0.1749], device='cuda:0')
+Loss d tensor(-31.1933, device='cuda:0')
+LossD -31.193344116210938 LossG 14.30112075805664 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1584, device='cuda:0') BestLossF 0.12760162353515625 Iteration 73 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.1636,  0.6406,  0.2769], device='cuda:0')
+Loss d tensor(-29.8811, device='cuda:0')
+tensor(14.9503, device='cuda:0')
+LossD -29.881145477294922 LossG 14.950286865234375 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1753, device='cuda:0') BestLossF 0.12760162353515625 Iteration 74 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.4577,  1.3575,  0.1256], device='cuda:0')
+Loss d tensor(-29.8959, device='cuda:0')
+LossD -29.895858764648438 LossG 14.950286865234375 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1555, device='cuda:0') BestLossF 0.12760162353515625 Iteration 75 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.9844,  0.4922,  0.2321], device='cuda:0')
+Loss d tensor(-29.4400, device='cuda:0')
+LossD -29.440004348754883 LossG 14.950286865234375 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.2697, device='cuda:0') BestLossF 0.12760162353515625 Iteration 76 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.9064,  1.0524,  0.2750], device='cuda:0')
+Loss d tensor(-30.8683, device='cuda:0')
+LossD -30.868255615234375 LossG 14.950286865234375 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.2771, device='cuda:0') BestLossF 0.12760162353515625 Iteration 77 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.4579,  0.8457, -0.0335], device='cuda:0')
+Loss d tensor(-31.1917, device='cuda:0')
+LossD -31.19171905517578 LossG 14.950286865234375 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.2360, device='cuda:0') BestLossF 0.12760162353515625 Iteration 78 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.6378,  0.7945,  0.0208], device='cuda:0')
+Loss d tensor(-31.4241, device='cuda:0')
+tensor(15.0838, device='cuda:0')
+LossD -31.42407989501953 LossG 15.083765029907227 BestLossD -31.576030731201172 BestLossG 2.107762575149536 LossF tensor(0.1342, device='cuda:0') BestLossF 0.12760162353515625 Iteration 79 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.7502,  1.5442,  0.0621], device='cuda:0')
+Loss d tensor(-31.7742, device='cuda:0')
+LossD -31.77419662475586 LossG 15.083765029907227 BestLossD -31.77419662475586 BestLossG 2.107762575149536 LossF tensor(0.1625, device='cuda:0') BestLossF 0.12760162353515625 Iteration 80 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.7783,  0.4492, -0.8007], device='cuda:0')
+Loss d tensor(-30.9390, device='cuda:0')
+LossD -30.93899917602539 LossG 15.083765029907227 BestLossD -31.77419662475586 BestLossG 2.107762575149536 LossF tensor(0.2213, device='cuda:0') BestLossF 0.12760162353515625 Iteration 81 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.7047,  0.8401, -0.1565], device='cuda:0')
+Loss d tensor(-30.3463, device='cuda:0')
+LossD -30.346275329589844 LossG 15.083765029907227 BestLossD -31.77419662475586 BestLossG 2.107762575149536 LossF tensor(0.1453, device='cuda:0') BestLossF 0.12760162353515625 Iteration 82 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.1265,  1.1985, -0.0525], device='cuda:0')
+Loss d tensor(-32.0300, device='cuda:0')
+LossD -32.02996826171875 LossG 15.083765029907227 BestLossD -32.02996826171875 BestLossG 2.107762575149536 LossF tensor(0.1898, device='cuda:0') BestLossF 0.12760162353515625 Iteration 83 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.4854,  0.7855,  0.2080], device='cuda:0')
+Loss d tensor(-31.9712, device='cuda:0')
+tensor(15.3271, device='cuda:0')
+LossD -31.971235275268555 LossG 15.327071189880371 BestLossD -32.02996826171875 BestLossG 2.107762575149536 LossF tensor(0.1448, device='cuda:0') BestLossF 0.12760162353515625 Iteration 84 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([-0.8580,  1.2476, -0.0223], device='cuda:0')
+Loss d tensor(-32.2834, device='cuda:0')
+LossD -32.283447265625 LossG 15.327071189880371 BestLossD -32.283447265625 BestLossG 2.107762575149536 LossF tensor(0.1653, device='cuda:0') BestLossF 0.12760162353515625 Iteration 85 Best Loss Iteration G 4 Best Loss Iteration F 66
+Branch Outputs::: tensor([ 0.0167,  0.5585, -0.2875], device='cuda:0')
+Loss d tensor(-31.4114, device='cuda:0')
+LossD -31.41135025024414 LossG 15.327071189880371 BestLossD -32.283447265625 BestLossG 2.107762575149536 LossF tensor(0.1135, device='cuda:0') BestLossF 0.11349686235189438 Iteration 86 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.2088,  0.7849,  0.1784], device='cuda:0')
+Loss d tensor(-31.9096, device='cuda:0')
+LossD -31.909629821777344 LossG 15.327071189880371 BestLossD -32.283447265625 BestLossG 2.107762575149536 LossF tensor(0.1271, device='cuda:0') BestLossF 0.11349686235189438 Iteration 87 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.8953,  1.0827,  0.1193], device='cuda:0')
+Loss d tensor(-31.7394, device='cuda:0')
+LossD -31.739398956298828 LossG 15.327071189880371 BestLossD -32.283447265625 BestLossG 2.107762575149536 LossF tensor(0.1605, device='cuda:0') BestLossF 0.11349686235189438 Iteration 88 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.1997,  1.0467,  0.0819], device='cuda:0')
+Loss d tensor(-32.7400, device='cuda:0')
+tensor(15.8790, device='cuda:0')
+LossD -32.740028381347656 LossG 15.8790283203125 BestLossD -32.740028381347656 BestLossG 2.107762575149536 LossF tensor(0.2181, device='cuda:0') BestLossF 0.11349686235189438 Iteration 89 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.0388,  0.8773,  0.1750], device='cuda:0')
+Loss d tensor(-31.6310, device='cuda:0')
+LossD -31.631046295166016 LossG 15.8790283203125 BestLossD -32.740028381347656 BestLossG 2.107762575149536 LossF tensor(0.2201, device='cuda:0') BestLossF 0.11349686235189438 Iteration 90 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.1243,  1.0545, -0.3051], device='cuda:0')
+Loss d tensor(-31.5711, device='cuda:0')
+LossD -31.57108497619629 LossG 15.8790283203125 BestLossD -32.740028381347656 BestLossG 2.107762575149536 LossF tensor(0.1156, device='cuda:0') BestLossF 0.11349686235189438 Iteration 91 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.1108,  0.7659, -0.0611], device='cuda:0')
+Loss d tensor(-32.2127, device='cuda:0')
+LossD -32.212738037109375 LossG 15.8790283203125 BestLossD -32.740028381347656 BestLossG 2.107762575149536 LossF tensor(0.1705, device='cuda:0') BestLossF 0.11349686235189438 Iteration 92 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.3746,  0.8302, -0.3008], device='cuda:0')
+Loss d tensor(-33.8234, device='cuda:0')
+LossD -33.823394775390625 LossG 15.8790283203125 BestLossD -33.823394775390625 BestLossG 2.107762575149536 LossF tensor(0.1273, device='cuda:0') BestLossF 0.11349686235189438 Iteration 93 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.1921,  0.3648, -0.4718], device='cuda:0')
+Loss d tensor(-32.0356, device='cuda:0')
+tensor(15.9649, device='cuda:0')
+LossD -32.035614013671875 LossG 15.964948654174805 BestLossD -33.823394775390625 BestLossG 2.107762575149536 LossF tensor(0.1613, device='cuda:0') BestLossF 0.11349686235189438 Iteration 94 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.0743,  0.6604, -0.0711], device='cuda:0')
+Loss d tensor(-33.4688, device='cuda:0')
+LossD -33.468807220458984 LossG 15.964948654174805 BestLossD -33.823394775390625 BestLossG 2.107762575149536 LossF tensor(0.1205, device='cuda:0') BestLossF 0.11349686235189438 Iteration 95 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.4638,  1.0503,  0.0049], device='cuda:0')
+Loss d tensor(-32.9182, device='cuda:0')
+LossD -32.91822052001953 LossG 15.964948654174805 BestLossD -33.823394775390625 BestLossG 2.107762575149536 LossF tensor(0.1663, device='cuda:0') BestLossF 0.11349686235189438 Iteration 96 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.9211,  1.3184,  0.4727], device='cuda:0')
+Loss d tensor(-34.5072, device='cuda:0')
+LossD -34.507232666015625 LossG 15.964948654174805 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1386, device='cuda:0') BestLossF 0.11349686235189438 Iteration 97 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.5002,  1.1134,  0.3634], device='cuda:0')
+Loss d tensor(-32.2498, device='cuda:0')
+LossD -32.2497673034668 LossG 15.964948654174805 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1483, device='cuda:0') BestLossF 0.11349686235189438 Iteration 98 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.2693,  1.1173,  0.0094], device='cuda:0')
+Loss d tensor(-33.7861, device='cuda:0')
+tensor(16.6392, device='cuda:0')
+LossD -33.78607940673828 LossG 16.639209747314453 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1440, device='cuda:0') BestLossF 0.11349686235189438 Iteration 99 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.1927,  0.6318, -0.4283], device='cuda:0')
+Loss d tensor(-33.5227, device='cuda:0')
+LossD -33.522743225097656 LossG 16.639209747314453 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1911, device='cuda:0') BestLossF 0.11349686235189438 Iteration 100 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.6169,  1.6544,  0.6049], device='cuda:0')
+Loss d tensor(-33.4383, device='cuda:0')
+LossD -33.43830108642578 LossG 16.639209747314453 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1821, device='cuda:0') BestLossF 0.11349686235189438 Iteration 101 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.9533,  1.0785,  0.0937], device='cuda:0')
+Loss d tensor(-33.5648, device='cuda:0')
+LossD -33.56477737426758 LossG 16.639209747314453 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1328, device='cuda:0') BestLossF 0.11349686235189438 Iteration 102 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-1.1197,  0.8186,  0.0412], device='cuda:0')
+Loss d tensor(-33.8503, device='cuda:0')
+LossD -33.8503303527832 LossG 16.639209747314453 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1744, device='cuda:0') BestLossF 0.11349686235189438 Iteration 103 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.6575,  0.6782, -0.4197], device='cuda:0')
+Loss d tensor(-33.3577, device='cuda:0')
+tensor(16.7776, device='cuda:0')
+LossD -33.35765838623047 LossG 16.77756690979004 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1616, device='cuda:0') BestLossF 0.11349686235189438 Iteration 104 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([-0.6382,  0.9109, -0.1760], device='cuda:0')
+Loss d tensor(-33.6374, device='cuda:0')
+LossD -33.637393951416016 LossG 16.77756690979004 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1653, device='cuda:0') BestLossF 0.11349686235189438 Iteration 105 Best Loss Iteration G 4 Best Loss Iteration F 86
+Branch Outputs::: tensor([ 0.1576,  1.0147, -0.1826], device='cuda:0')
+Loss d tensor(-34.2404, device='cuda:0')
+LossD -34.240379333496094 LossG 16.77756690979004 BestLossD -34.507232666015625 BestLossG 2.107762575149536 LossF tensor(0.1035, device='cuda:0') BestLossF 0.1035420298576355 Iteration 106 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.2929,  1.0701, -0.1054], device='cuda:0')
+Loss d tensor(-34.7172, device='cuda:0')
+LossD -34.717159271240234 LossG 16.77756690979004 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1498, device='cuda:0') BestLossF 0.1035420298576355 Iteration 107 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.9461,  1.3625,  0.0577], device='cuda:0')
+Loss d tensor(-34.0675, device='cuda:0')
+LossD -34.06751251220703 LossG 16.77756690979004 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1137, device='cuda:0') BestLossF 0.1035420298576355 Iteration 108 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.4262,  1.2655,  0.2471], device='cuda:0')
+Loss d tensor(-32.6806, device='cuda:0')
+tensor(16.0725, device='cuda:0')
+LossD -32.68062210083008 LossG 16.072538375854492 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1433, device='cuda:0') BestLossF 0.1035420298576355 Iteration 109 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.5283,  0.5660, -0.0325], device='cuda:0')
+Loss d tensor(-34.2011, device='cuda:0')
+LossD -34.201080322265625 LossG 16.072538375854492 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1150, device='cuda:0') BestLossF 0.1035420298576355 Iteration 110 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.4375,  1.1769,  0.3321], device='cuda:0')
+Loss d tensor(-33.1218, device='cuda:0')
+LossD -33.12181854248047 LossG 16.072538375854492 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1968, device='cuda:0') BestLossF 0.1035420298576355 Iteration 111 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.4987,  1.0767, -0.0775], device='cuda:0')
+Loss d tensor(-33.7347, device='cuda:0')
+LossD -33.73467254638672 LossG 16.072538375854492 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1290, device='cuda:0') BestLossF 0.1035420298576355 Iteration 112 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.2504,  1.1271, -0.1680], device='cuda:0')
+Loss d tensor(-33.9147, device='cuda:0')
+LossD -33.91474151611328 LossG 16.072538375854492 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1517, device='cuda:0') BestLossF 0.1035420298576355 Iteration 113 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.6020,  0.6739,  0.0675], device='cuda:0')
+Loss d tensor(-33.5654, device='cuda:0')
+tensor(16.3844, device='cuda:0')
+LossD -33.56537628173828 LossG 16.38443946838379 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1283, device='cuda:0') BestLossF 0.1035420298576355 Iteration 114 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 1.1047,  1.4806, -0.1338], device='cuda:0')
+Loss d tensor(-33.6345, device='cuda:0')
+LossD -33.63446044921875 LossG 16.38443946838379 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1151, device='cuda:0') BestLossF 0.1035420298576355 Iteration 115 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.7757,  0.5723, -0.3744], device='cuda:0')
+Loss d tensor(-34.5428, device='cuda:0')
+LossD -34.54283142089844 LossG 16.38443946838379 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1155, device='cuda:0') BestLossF 0.1035420298576355 Iteration 116 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.0747,  1.0244, -0.1109], device='cuda:0')
+Loss d tensor(-34.4971, device='cuda:0')
+LossD -34.497108459472656 LossG 16.38443946838379 BestLossD -34.717159271240234 BestLossG 2.107762575149536 LossF tensor(0.1387, device='cuda:0') BestLossF 0.1035420298576355 Iteration 117 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.7230,  0.8387,  0.1567], device='cuda:0')
+Loss d tensor(-34.8077, device='cuda:0')
+LossD -34.807674407958984 LossG 16.38443946838379 BestLossD -34.807674407958984 BestLossG 2.107762575149536 LossF tensor(0.1098, device='cuda:0') BestLossF 0.1035420298576355 Iteration 118 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 1.0608,  1.4375, -0.0694], device='cuda:0')
+Loss d tensor(-34.2418, device='cuda:0')
+tensor(17.0447, device='cuda:0')
+LossD -34.24180603027344 LossG 17.044681549072266 BestLossD -34.807674407958984 BestLossG 2.107762575149536 LossF tensor(0.1747, device='cuda:0') BestLossF 0.1035420298576355 Iteration 119 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.5694,  0.8408,  0.0463], device='cuda:0')
+Loss d tensor(-33.8686, device='cuda:0')
+LossD -33.86859130859375 LossG 17.044681549072266 BestLossD -34.807674407958984 BestLossG 2.107762575149536 LossF tensor(0.1154, device='cuda:0') BestLossF 0.1035420298576355 Iteration 120 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.3752,  1.0380, -0.0533], device='cuda:0')
+Loss d tensor(-34.8006, device='cuda:0')
+LossD -34.80057907104492 LossG 17.044681549072266 BestLossD -34.807674407958984 BestLossG 2.107762575149536 LossF tensor(0.1497, device='cuda:0') BestLossF 0.1035420298576355 Iteration 121 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.1433,  1.2743,  0.2046], device='cuda:0')
+Loss d tensor(-35.1534, device='cuda:0')
+LossD -35.15339660644531 LossG 17.044681549072266 BestLossD -35.15339660644531 BestLossG 2.107762575149536 LossF tensor(0.1487, device='cuda:0') BestLossF 0.1035420298576355 Iteration 122 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.1000,  0.9251, -0.3663], device='cuda:0')
+Loss d tensor(-35.2935, device='cuda:0')
+LossD -35.293514251708984 LossG 17.044681549072266 BestLossD -35.293514251708984 BestLossG 2.107762575149536 LossF tensor(0.1630, device='cuda:0') BestLossF 0.1035420298576355 Iteration 123 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.4732,  0.5836, -0.4703], device='cuda:0')
+Loss d tensor(-34.9983, device='cuda:0')
+tensor(17.1711, device='cuda:0')
+LossD -34.998252868652344 LossG 17.171125411987305 BestLossD -35.293514251708984 BestLossG 2.107762575149536 LossF tensor(0.1384, device='cuda:0') BestLossF 0.1035420298576355 Iteration 124 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.2371,  0.9381,  0.2700], device='cuda:0')
+Loss d tensor(-34.5819, device='cuda:0')
+LossD -34.581939697265625 LossG 17.171125411987305 BestLossD -35.293514251708984 BestLossG 2.107762575149536 LossF tensor(0.1500, device='cuda:0') BestLossF 0.1035420298576355 Iteration 125 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.0768,  1.4112, -0.1094], device='cuda:0')
+Loss d tensor(-34.3351, device='cuda:0')
+LossD -34.335121154785156 LossG 17.171125411987305 BestLossD -35.293514251708984 BestLossG 2.107762575149536 LossF tensor(0.1421, device='cuda:0') BestLossF 0.1035420298576355 Iteration 126 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.7186,  1.0914,  0.1046], device='cuda:0')
+Loss d tensor(-35.7812, device='cuda:0')
+LossD -35.78116226196289 LossG 17.171125411987305 BestLossD -35.78116226196289 BestLossG 2.107762575149536 LossF tensor(0.1287, device='cuda:0') BestLossF 0.1035420298576355 Iteration 127 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.1714,  1.1023,  0.1415], device='cuda:0')
+Loss d tensor(-34.9852, device='cuda:0')
+LossD -34.985206604003906 LossG 17.171125411987305 BestLossD -35.78116226196289 BestLossG 2.107762575149536 LossF tensor(0.1309, device='cuda:0') BestLossF 0.1035420298576355 Iteration 128 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.4862,  0.8793,  0.0534], device='cuda:0')
+Loss d tensor(-35.1284, device='cuda:0')
+tensor(16.9927, device='cuda:0')
+LossD -35.12841796875 LossG 16.992704391479492 BestLossD -35.78116226196289 BestLossG 2.107762575149536 LossF tensor(0.1617, device='cuda:0') BestLossF 0.1035420298576355 Iteration 129 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.7319,  0.9955,  0.2791], device='cuda:0')
+Loss d tensor(-34.6679, device='cuda:0')
+LossD -34.667930603027344 LossG 16.992704391479492 BestLossD -35.78116226196289 BestLossG 2.107762575149536 LossF tensor(0.1767, device='cuda:0') BestLossF 0.1035420298576355 Iteration 130 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([-0.1184,  1.1566,  0.4980], device='cuda:0')
+Loss d tensor(-34.9222, device='cuda:0')
+LossD -34.922203063964844 LossG 16.992704391479492 BestLossD -35.78116226196289 BestLossG 2.107762575149536 LossF tensor(0.1144, device='cuda:0') BestLossF 0.1035420298576355 Iteration 131 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.3849,  0.8461, -0.0641], device='cuda:0')
+Loss d tensor(-36.0044, device='cuda:0')
+LossD -36.004417419433594 LossG 16.992704391479492 BestLossD -36.004417419433594 BestLossG 2.107762575149536 LossF tensor(0.1136, device='cuda:0') BestLossF 0.1035420298576355 Iteration 132 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.1265,  0.8752, -0.2763], device='cuda:0')
+Loss d tensor(-35.1475, device='cuda:0')
+LossD -35.14745330810547 LossG 16.992704391479492 BestLossD -36.004417419433594 BestLossG 2.107762575149536 LossF tensor(0.1297, device='cuda:0') BestLossF 0.1035420298576355 Iteration 133 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.1791,  0.7413,  0.0687], device='cuda:0')
+Loss d tensor(-35.4495, device='cuda:0')
+tensor(17.1261, device='cuda:0')
+LossD -35.449493408203125 LossG 17.126129150390625 BestLossD -36.004417419433594 BestLossG 2.107762575149536 LossF tensor(0.1483, device='cuda:0') BestLossF 0.1035420298576355 Iteration 134 Best Loss Iteration G 4 Best Loss Iteration F 106
+Branch Outputs::: tensor([ 0.5948,  0.4837, -0.2954], device='cuda:0')
+Loss d tensor(-35.2453, device='cuda:0')
+LossD -35.245269775390625 LossG 17.126129150390625 BestLossD -36.004417419433594 BestLossG 2.107762575149536 LossF tensor(0.1001, device='cuda:0') BestLossF 0.10013552010059357 Iteration 135 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.6889,  0.8747,  0.0772], device='cuda:0')
+Loss d tensor(-36.1124, device='cuda:0')
+LossD -36.112388610839844 LossG 17.126129150390625 BestLossD -36.112388610839844 BestLossG 2.107762575149536 LossF tensor(0.1518, device='cuda:0') BestLossF 0.10013552010059357 Iteration 136 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.3574,  0.6462,  0.2373], device='cuda:0')
+Loss d tensor(-35.9817, device='cuda:0')
+LossD -35.981727600097656 LossG 17.126129150390625 BestLossD -36.112388610839844 BestLossG 2.107762575149536 LossF tensor(0.1307, device='cuda:0') BestLossF 0.10013552010059357 Iteration 137 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.5152,  0.5918, -0.3882], device='cuda:0')
+Loss d tensor(-36.0969, device='cuda:0')
+LossD -36.09690475463867 LossG 17.126129150390625 BestLossD -36.112388610839844 BestLossG 2.107762575149536 LossF tensor(0.1558, device='cuda:0') BestLossF 0.10013552010059357 Iteration 138 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.4962,  0.6795, -0.0052], device='cuda:0')
+Loss d tensor(-36.0963, device='cuda:0')
+tensor(17.6486, device='cuda:0')
+LossD -36.09629821777344 LossG 17.64855194091797 BestLossD -36.112388610839844 BestLossG 2.107762575149536 LossF tensor(0.1539, device='cuda:0') BestLossF 0.10013552010059357 Iteration 139 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.8609,  1.1291,  0.1799], device='cuda:0')
+Loss d tensor(-35.8153, device='cuda:0')
+LossD -35.81533432006836 LossG 17.64855194091797 BestLossD -36.112388610839844 BestLossG 2.107762575149536 LossF tensor(0.1245, device='cuda:0') BestLossF 0.10013552010059357 Iteration 140 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.6115,  0.3012, -0.1271], device='cuda:0')
+Loss d tensor(-36.1881, device='cuda:0')
+LossD -36.18814468383789 LossG 17.64855194091797 BestLossD -36.18814468383789 BestLossG 2.107762575149536 LossF tensor(0.1623, device='cuda:0') BestLossF 0.10013552010059357 Iteration 141 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.5300,  1.4131,  0.0210], device='cuda:0')
+Loss d tensor(-36.3934, device='cuda:0')
+LossD -36.3934211730957 LossG 17.64855194091797 BestLossD -36.3934211730957 BestLossG 2.107762575149536 LossF tensor(0.1799, device='cuda:0') BestLossF 0.10013552010059357 Iteration 142 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.0571,  0.8629,  0.4154], device='cuda:0')
+Loss d tensor(-35.7889, device='cuda:0')
+LossD -35.78887176513672 LossG 17.64855194091797 BestLossD -36.3934211730957 BestLossG 2.107762575149536 LossF tensor(0.1414, device='cuda:0') BestLossF 0.10013552010059357 Iteration 143 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.6767,  0.9923,  0.3584], device='cuda:0')
+Loss d tensor(-35.1537, device='cuda:0')
+tensor(17.6346, device='cuda:0')
+LossD -35.15365982055664 LossG 17.63455581665039 BestLossD -36.3934211730957 BestLossG 2.107762575149536 LossF tensor(0.1133, device='cuda:0') BestLossF 0.10013552010059357 Iteration 144 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.5496,  0.7139, -0.1759], device='cuda:0')
+Loss d tensor(-35.9278, device='cuda:0')
+LossD -35.92781066894531 LossG 17.63455581665039 BestLossD -36.3934211730957 BestLossG 2.107762575149536 LossF tensor(0.1186, device='cuda:0') BestLossF 0.10013552010059357 Iteration 145 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.9971,  1.0244,  0.0606], device='cuda:0')
+Loss d tensor(-35.3712, device='cuda:0')
+LossD -35.371238708496094 LossG 17.63455581665039 BestLossD -36.3934211730957 BestLossG 2.107762575149536 LossF tensor(0.1558, device='cuda:0') BestLossF 0.10013552010059357 Iteration 146 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.5849,  0.8029,  0.0654], device='cuda:0')
+Loss d tensor(-36.5420, device='cuda:0')
+LossD -36.54200744628906 LossG 17.63455581665039 BestLossD -36.54200744628906 BestLossG 2.107762575149536 LossF tensor(0.1153, device='cuda:0') BestLossF 0.10013552010059357 Iteration 147 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.0676,  1.0061, -0.1964], device='cuda:0')
+Loss d tensor(-36.8100, device='cuda:0')
+LossD -36.810035705566406 LossG 17.63455581665039 BestLossD -36.810035705566406 BestLossG 2.107762575149536 LossF tensor(0.1299, device='cuda:0') BestLossF 0.10013552010059357 Iteration 148 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.6920,  0.8072,  0.2576], device='cuda:0')
+Loss d tensor(-36.2159, device='cuda:0')
+tensor(17.8613, device='cuda:0')
+LossD -36.215911865234375 LossG 17.86126708984375 BestLossD -36.810035705566406 BestLossG 2.107762575149536 LossF tensor(0.1507, device='cuda:0') BestLossF 0.10013552010059357 Iteration 149 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.6871,  0.8695, -0.2215], device='cuda:0')
+Loss d tensor(-36.3898, device='cuda:0')
+LossD -36.389793395996094 LossG 17.86126708984375 BestLossD -36.810035705566406 BestLossG 2.107762575149536 LossF tensor(0.1288, device='cuda:0') BestLossF 0.10013552010059357 Iteration 150 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.0316,  1.3267, -0.0659], device='cuda:0')
+Loss d tensor(-36.5767, device='cuda:0')
+LossD -36.576683044433594 LossG 17.86126708984375 BestLossD -36.810035705566406 BestLossG 2.107762575149536 LossF tensor(0.1339, device='cuda:0') BestLossF 0.10013552010059357 Iteration 151 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.4661,  0.8901,  0.0054], device='cuda:0')
+Loss d tensor(-37.2003, device='cuda:0')
+LossD -37.200347900390625 LossG 17.86126708984375 BestLossD -37.200347900390625 BestLossG 2.107762575149536 LossF tensor(0.1659, device='cuda:0') BestLossF 0.10013552010059357 Iteration 152 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.3633,  0.6095, -0.2805], device='cuda:0')
+Loss d tensor(-36.9784, device='cuda:0')
+LossD -36.9783935546875 LossG 17.86126708984375 BestLossD -37.200347900390625 BestLossG 2.107762575149536 LossF tensor(0.1168, device='cuda:0') BestLossF 0.10013552010059357 Iteration 153 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.0188,  0.7434,  0.2304], device='cuda:0')
+Loss d tensor(-37.0173, device='cuda:0')
+tensor(18.3059, device='cuda:0')
+LossD -37.01726531982422 LossG 18.30586814880371 BestLossD -37.200347900390625 BestLossG 2.107762575149536 LossF tensor(0.1243, device='cuda:0') BestLossF 0.10013552010059357 Iteration 154 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.5272,  0.8006,  0.2824], device='cuda:0')
+Loss d tensor(-36.4376, device='cuda:0')
+LossD -36.43756866455078 LossG 18.30586814880371 BestLossD -37.200347900390625 BestLossG 2.107762575149536 LossF tensor(0.1240, device='cuda:0') BestLossF 0.10013552010059357 Iteration 155 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.4478,  1.0102,  0.5069], device='cuda:0')
+Loss d tensor(-37.1312, device='cuda:0')
+LossD -37.13124084472656 LossG 18.30586814880371 BestLossD -37.200347900390625 BestLossG 2.107762575149536 LossF tensor(0.1385, device='cuda:0') BestLossF 0.10013552010059357 Iteration 156 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.0947,  0.9342,  0.1071], device='cuda:0')
+Loss d tensor(-37.3118, device='cuda:0')
+LossD -37.31182861328125 LossG 18.30586814880371 BestLossD -37.31182861328125 BestLossG 2.107762575149536 LossF tensor(0.1349, device='cuda:0') BestLossF 0.10013552010059357 Iteration 157 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.1632,  0.7663, -0.0460], device='cuda:0')
+Loss d tensor(-37.3497, device='cuda:0')
+LossD -37.34973907470703 LossG 18.30586814880371 BestLossD -37.34973907470703 BestLossG 2.107762575149536 LossF tensor(0.1103, device='cuda:0') BestLossF 0.10013552010059357 Iteration 158 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.4775,  1.0517, -0.1885], device='cuda:0')
+Loss d tensor(-37.1493, device='cuda:0')
+tensor(18.2562, device='cuda:0')
+LossD -37.149288177490234 LossG 18.256153106689453 BestLossD -37.34973907470703 BestLossG 2.107762575149536 LossF tensor(0.1216, device='cuda:0') BestLossF 0.10013552010059357 Iteration 159 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.1177,  0.9247,  0.2703], device='cuda:0')
+Loss d tensor(-36.4485, device='cuda:0')
+LossD -36.448509216308594 LossG 18.256153106689453 BestLossD -37.34973907470703 BestLossG 2.107762575149536 LossF tensor(0.1374, device='cuda:0') BestLossF 0.10013552010059357 Iteration 160 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.8540,  1.0928, -0.1313], device='cuda:0')
+Loss d tensor(-37.4431, device='cuda:0')
+LossD -37.4431037902832 LossG 18.256153106689453 BestLossD -37.4431037902832 BestLossG 2.107762575149536 LossF tensor(0.1274, device='cuda:0') BestLossF 0.10013552010059357 Iteration 161 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.2949,  1.0299,  0.0690], device='cuda:0')
+Loss d tensor(-37.6867, device='cuda:0')
+LossD -37.686683654785156 LossG 18.256153106689453 BestLossD -37.686683654785156 BestLossG 2.107762575149536 LossF tensor(0.2412, device='cuda:0') BestLossF 0.10013552010059357 Iteration 162 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.2177,  1.0977,  0.3665], device='cuda:0')
+Loss d tensor(-37.8005, device='cuda:0')
+LossD -37.80047607421875 LossG 18.256153106689453 BestLossD -37.80047607421875 BestLossG 2.107762575149536 LossF tensor(0.1319, device='cuda:0') BestLossF 0.10013552010059357 Iteration 163 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.0535,  0.9430,  0.2310], device='cuda:0')
+Loss d tensor(-37.8134, device='cuda:0')
+tensor(18.8359, device='cuda:0')
+LossD -37.81340789794922 LossG 18.835880279541016 BestLossD -37.81340789794922 BestLossG 2.107762575149536 LossF tensor(0.1444, device='cuda:0') BestLossF 0.10013552010059357 Iteration 164 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([ 0.0160,  1.0819, -0.1146], device='cuda:0')
+Loss d tensor(-37.4596, device='cuda:0')
+LossD -37.45957946777344 LossG 18.835880279541016 BestLossD -37.81340789794922 BestLossG 2.107762575149536 LossF tensor(0.1101, device='cuda:0') BestLossF 0.10013552010059357 Iteration 165 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.3362,  0.8244,  0.2946], device='cuda:0')
+Loss d tensor(-36.7834, device='cuda:0')
+LossD -36.78342056274414 LossG 18.835880279541016 BestLossD -37.81340789794922 BestLossG 2.107762575149536 LossF tensor(0.1307, device='cuda:0') BestLossF 0.10013552010059357 Iteration 166 Best Loss Iteration G 4 Best Loss Iteration F 135
+Branch Outputs::: tensor([-0.8036,  0.8760, -0.0464], device='cuda:0')
+Loss d tensor(-37.7079, device='cuda:0')
+LossD -37.70789337158203 LossG 18.835880279541016 BestLossD -37.81340789794922 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.4111, device='cuda:0') BestLossF 0.09411074966192245 Iteration 167 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([ 0.7678,  0.8792,  0.3499], device='cuda:0')
+Loss d tensor(-38.0752, device='cuda:0')
+LossD -38.07518768310547 LossG 18.835880279541016 BestLossD -38.07518768310547 BestLossG 2.107762575149536 LossF tensor(0.1140, device='cuda:0') BestLossF 0.09411074966192245 Iteration 168 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([-0.2001,  0.8644,  0.1006], device='cuda:0')
+Loss d tensor(-38.0415, device='cuda:0')
+tensor(18.7535, device='cuda:0')
+LossD -38.04149627685547 LossG 18.753538131713867 BestLossD -38.07518768310547 BestLossG 2.107762575149536 LossF tensor(0.1098, device='cuda:0') BestLossF 0.09411074966192245 Iteration 169 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([ 0.0799,  0.6513, -0.1647], device='cuda:0')
+Loss d tensor(-37.8831, device='cuda:0')
+LossD -37.883140563964844 LossG 18.753538131713867 BestLossD -38.07518768310547 BestLossG 2.107762575149536 LossF tensor(0.1183, device='cuda:0') BestLossF 0.09411074966192245 Iteration 170 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([ 0.7266,  1.2021, -0.1648], device='cuda:0')
+Loss d tensor(-37.7188, device='cuda:0')
+LossD -37.71881103515625 LossG 18.753538131713867 BestLossD -38.07518768310547 BestLossG 2.107762575149536 LossF tensor(0.1490, device='cuda:0') BestLossF 0.09411074966192245 Iteration 171 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([ 0.9152,  1.0225, -0.2742], device='cuda:0')
+Loss d tensor(-37.7031, device='cuda:0')
+LossD -37.70307922363281 LossG 18.753538131713867 BestLossD -38.07518768310547 BestLossG 2.107762575149536 LossF tensor(0.1037, device='cuda:0') BestLossF 0.09411074966192245 Iteration 172 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([ 0.2173,  0.8519,  0.2845], device='cuda:0')
+Loss d tensor(-38.2295, device='cuda:0')
+LossD -38.229469299316406 LossG 18.753538131713867 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(0.1188, device='cuda:0') BestLossF 0.09411074966192245 Iteration 173 Best Loss Iteration G 4 Best Loss Iteration F 167
+Branch Outputs::: tensor([ 0.6534,  0.1946,  0.2243], device='cuda:0')
+Loss d tensor(-37.4813, device='cuda:0')
+tensor(18.4602, device='cuda:0')
+LossD -37.48130416870117 LossG 18.46018409729004 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9000, device='cuda:0') BestLossF 0.08899977058172226 Iteration 174 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([ 0.8238,  0.7811, -0.0416], device='cuda:0')
+Loss d tensor(-37.0928, device='cuda:0')
+LossD -37.09284591674805 LossG 18.46018409729004 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9364, device='cuda:0') BestLossF 0.08899977058172226 Iteration 175 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([ 0.4776,  0.9212,  0.0853], device='cuda:0')
+Loss d tensor(-37.5857, device='cuda:0')
+LossD -37.58568572998047 LossG 18.46018409729004 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(0.1410, device='cuda:0') BestLossF 0.08899977058172226 Iteration 176 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([-0.0271,  0.8218,  0.2487], device='cuda:0')
+Loss d tensor(-37.9630, device='cuda:0')
+LossD -37.96300506591797 LossG 18.46018409729004 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(0.1097, device='cuda:0') BestLossF 0.08899977058172226 Iteration 177 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([ 1.1746,  0.7556,  0.2009], device='cuda:0')
+Loss d tensor(-37.8218, device='cuda:0')
+LossD -37.82184600830078 LossG 18.46018409729004 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(0.1419, device='cuda:0') BestLossF 0.08899977058172226 Iteration 178 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([-0.2958,  1.2283, -0.0659], device='cuda:0')
+Loss d tensor(-38.1170, device='cuda:0')
+tensor(18.7534, device='cuda:0')
+LossD -38.116973876953125 LossG 18.75342559814453 BestLossD -38.229469299316406 BestLossG 2.107762575149536 LossF tensor(0.1093, device='cuda:0') BestLossF 0.08899977058172226 Iteration 179 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([-0.5470,  1.1305, -0.1150], device='cuda:0')
+Loss d tensor(-38.3863, device='cuda:0')
+LossD -38.386314392089844 LossG 18.75342559814453 BestLossD -38.386314392089844 BestLossG 2.107762575149536 LossF tensor(0.1154, device='cuda:0') BestLossF 0.08899977058172226 Iteration 180 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([-0.2230,  1.1280, -0.3147], device='cuda:0')
+Loss d tensor(-38.5218, device='cuda:0')
+LossD -38.521759033203125 LossG 18.75342559814453 BestLossD -38.521759033203125 BestLossG 2.107762575149536 LossF tensor(0.1022, device='cuda:0') BestLossF 0.08899977058172226 Iteration 181 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([ 0.8893,  1.1652,  0.1854], device='cuda:0')
+Loss d tensor(-38.5526, device='cuda:0')
+LossD -38.55264663696289 LossG 18.75342559814453 BestLossD -38.55264663696289 BestLossG 2.107762575149536 LossF tensor(0.1443, device='cuda:0') BestLossF 0.08899977058172226 Iteration 182 Best Loss Iteration G 4 Best Loss Iteration F 174
+Branch Outputs::: tensor([ 0.7353,  1.3056, -0.0568], device='cuda:0')
+Loss d tensor(-38.0278, device='cuda:0')
+LossD -38.02783203125 LossG 18.75342559814453 BestLossD -38.55264663696289 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.1628, device='cuda:0') BestLossF 0.08162765204906464 Iteration 183 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.4074,  0.6359, -0.0941], device='cuda:0')
+Loss d tensor(-38.6321, device='cuda:0')
+tensor(18.7636, device='cuda:0')
+LossD -38.632137298583984 LossG 18.763586044311523 BestLossD -38.632137298583984 BestLossG 2.107762575149536 LossF tensor(0.1118, device='cuda:0') BestLossF 0.08162765204906464 Iteration 184 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.3962,  1.0502,  0.0311], device='cuda:0')
+Loss d tensor(-38.5795, device='cuda:0')
+LossD -38.579498291015625 LossG 18.763586044311523 BestLossD -38.632137298583984 BestLossG 2.107762575149536 LossF tensor(0.1082, device='cuda:0') BestLossF 0.08162765204906464 Iteration 185 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.0498,  0.8215,  0.0574], device='cuda:0')
+Loss d tensor(-38.5698, device='cuda:0')
+LossD -38.56983184814453 LossG 18.763586044311523 BestLossD -38.632137298583984 BestLossG 2.107762575149536 LossF tensor(0.1506, device='cuda:0') BestLossF 0.08162765204906464 Iteration 186 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-1.1669,  1.3900, -0.1220], device='cuda:0')
+Loss d tensor(-38.3523, device='cuda:0')
+LossD -38.35231018066406 LossG 18.763586044311523 BestLossD -38.632137298583984 BestLossG 2.107762575149536 LossF tensor(0.1171, device='cuda:0') BestLossF 0.08162765204906464 Iteration 187 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.0666,  0.8345, -0.2101], device='cuda:0')
+Loss d tensor(-38.5959, device='cuda:0')
+LossD -38.59593200683594 LossG 18.763586044311523 BestLossD -38.632137298583984 BestLossG 2.107762575149536 LossF tensor(0.1180, device='cuda:0') BestLossF 0.08162765204906464 Iteration 188 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.8707,  1.0814, -0.3662], device='cuda:0')
+Loss d tensor(-39.1789, device='cuda:0')
+tensor(19.0917, device='cuda:0')
+LossD -39.17890167236328 LossG 19.091726303100586 BestLossD -39.17890167236328 BestLossG 2.107762575149536 LossF tensor(0.1173, device='cuda:0') BestLossF 0.08162765204906464 Iteration 189 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.3870,  0.9545,  0.2625], device='cuda:0')
+Loss d tensor(-38.5222, device='cuda:0')
+LossD -38.522186279296875 LossG 19.091726303100586 BestLossD -39.17890167236328 BestLossG 2.107762575149536 LossF tensor(0.1199, device='cuda:0') BestLossF 0.08162765204906464 Iteration 190 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 1.0894,  0.5270,  0.1828], device='cuda:0')
+Loss d tensor(-38.1444, device='cuda:0')
+LossD -38.14444351196289 LossG 19.091726303100586 BestLossD -39.17890167236328 BestLossG 2.107762575149536 LossF tensor(0.1122, device='cuda:0') BestLossF 0.08162765204906464 Iteration 191 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.7917,  0.7779,  0.0638], device='cuda:0')
+Loss d tensor(-39.0674, device='cuda:0')
+LossD -39.06736755371094 LossG 19.091726303100586 BestLossD -39.17890167236328 BestLossG 2.107762575149536 LossF tensor(0.1128, device='cuda:0') BestLossF 0.08162765204906464 Iteration 192 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.4666,  0.6739,  0.1164], device='cuda:0')
+Loss d tensor(-38.7017, device='cuda:0')
+LossD -38.70170593261719 LossG 19.091726303100586 BestLossD -39.17890167236328 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9849, device='cuda:0') BestLossF 0.08162765204906464 Iteration 193 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.1532,  0.8230,  0.0627], device='cuda:0')
+Loss d tensor(-39.5387, device='cuda:0')
+tensor(19.5044, device='cuda:0')
+LossD -39.53874206542969 LossG 19.504432678222656 BestLossD -39.53874206542969 BestLossG 2.107762575149536 LossF tensor(0.1145, device='cuda:0') BestLossF 0.08162765204906464 Iteration 194 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.0965,  0.8227,  0.0950], device='cuda:0')
+Loss d tensor(-38.3291, device='cuda:0')
+LossD -38.3291015625 LossG 19.504432678222656 BestLossD -39.53874206542969 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2524, device='cuda:0') BestLossF 0.08162765204906464 Iteration 195 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.6240,  0.5612, -0.1052], device='cuda:0')
+Loss d tensor(-39.1740, device='cuda:0')
+LossD -39.17402648925781 LossG 19.504432678222656 BestLossD -39.53874206542969 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9232, device='cuda:0') BestLossF 0.08162765204906464 Iteration 196 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.1793,  0.6962, -0.0677], device='cuda:0')
+Loss d tensor(-39.0227, device='cuda:0')
+LossD -39.02274703979492 LossG 19.504432678222656 BestLossD -39.53874206542969 BestLossG 2.107762575149536 LossF tensor(0.1114, device='cuda:0') BestLossF 0.08162765204906464 Iteration 197 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.1323,  0.8132,  0.0119], device='cuda:0')
+Loss d tensor(-38.9733, device='cuda:0')
+LossD -38.97332763671875 LossG 19.504432678222656 BestLossD -39.53874206542969 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.5973, device='cuda:0') BestLossF 0.08162765204906464 Iteration 198 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.2192,  0.5928,  0.1914], device='cuda:0')
+Loss d tensor(-39.7012, device='cuda:0')
+tensor(19.6528, device='cuda:0')
+LossD -39.701171875 LossG 19.65284538269043 BestLossD -39.701171875 BestLossG 2.107762575149536 LossF tensor(0.1089, device='cuda:0') BestLossF 0.08162765204906464 Iteration 199 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([ 0.2676,  0.7885,  0.0178], device='cuda:0')
+Loss d tensor(-39.1088, device='cuda:0')
+LossD -39.108787536621094 LossG 19.65284538269043 BestLossD -39.701171875 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.3363, device='cuda:0') BestLossF 0.08162765204906464 Iteration 200 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.2900,  1.0749,  0.2520], device='cuda:0')
+Loss d tensor(-39.7111, device='cuda:0')
+LossD -39.711082458496094 LossG 19.65284538269043 BestLossD -39.711082458496094 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9908, device='cuda:0') BestLossF 0.08162765204906464 Iteration 201 Best Loss Iteration G 4 Best Loss Iteration F 183
+Branch Outputs::: tensor([-0.5707,  1.2488,  0.2985], device='cuda:0')
+Loss d tensor(-39.4493, device='cuda:0')
+LossD -39.44929504394531 LossG 19.65284538269043 BestLossD -39.711082458496094 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.7344, device='cuda:0') BestLossF 0.07734371721744537 Iteration 202 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.8268,  0.6378,  0.0410], device='cuda:0')
+Loss d tensor(-39.6612, device='cuda:0')
+LossD -39.66123962402344 LossG 19.65284538269043 BestLossD -39.711082458496094 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.3914, device='cuda:0') BestLossF 0.07734371721744537 Iteration 203 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.0412,  0.9037, -0.0269], device='cuda:0')
+Loss d tensor(-39.8049, device='cuda:0')
+tensor(19.4845, device='cuda:0')
+LossD -39.80488586425781 LossG 19.48446273803711 BestLossD -39.80488586425781 BestLossG 2.107762575149536 LossF tensor(0.1164, device='cuda:0') BestLossF 0.07734371721744537 Iteration 204 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-1.0415,  1.0528,  0.1974], device='cuda:0')
+Loss d tensor(-39.1223, device='cuda:0')
+LossD -39.1223258972168 LossG 19.48446273803711 BestLossD -39.80488586425781 BestLossG 2.107762575149536 LossF tensor(0.1253, device='cuda:0') BestLossF 0.07734371721744537 Iteration 205 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.3141,  0.4112,  0.3006], device='cuda:0')
+Loss d tensor(-39.6569, device='cuda:0')
+LossD -39.65690612792969 LossG 19.48446273803711 BestLossD -39.80488586425781 BestLossG 2.107762575149536 LossF tensor(0.1372, device='cuda:0') BestLossF 0.07734371721744537 Iteration 206 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.7612,  1.0997, -0.4494], device='cuda:0')
+Loss d tensor(-39.7904, device='cuda:0')
+LossD -39.79041290283203 LossG 19.48446273803711 BestLossD -39.80488586425781 BestLossG 2.107762575149536 LossF tensor(0.1234, device='cuda:0') BestLossF 0.07734371721744537 Iteration 207 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.0233,  1.0003,  0.1574], device='cuda:0')
+Loss d tensor(-39.7686, device='cuda:0')
+LossD -39.768585205078125 LossG 19.48446273803711 BestLossD -39.80488586425781 BestLossG 2.107762575149536 LossF tensor(0.1220, device='cuda:0') BestLossF 0.07734371721744537 Iteration 208 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.7455,  0.7356, -0.2914], device='cuda:0')
+Loss d tensor(-40.0026, device='cuda:0')
+tensor(19.9761, device='cuda:0')
+LossD -40.002628326416016 LossG 19.976139068603516 BestLossD -40.002628326416016 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.6605, device='cuda:0') BestLossF 0.07734371721744537 Iteration 209 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.8120,  0.4714, -0.1212], device='cuda:0')
+Loss d tensor(-39.3598, device='cuda:0')
+LossD -39.359764099121094 LossG 19.976139068603516 BestLossD -40.002628326416016 BestLossG 2.107762575149536 LossF tensor(0.1332, device='cuda:0') BestLossF 0.07734371721744537 Iteration 210 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.9331,  1.0883,  0.2726], device='cuda:0')
+Loss d tensor(-40.1619, device='cuda:0')
+LossD -40.16185760498047 LossG 19.976139068603516 BestLossD -40.16185760498047 BestLossG 2.107762575149536 LossF tensor(0.1331, device='cuda:0') BestLossF 0.07734371721744537 Iteration 211 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.9489,  0.6118,  0.1290], device='cuda:0')
+Loss d tensor(-39.7695, device='cuda:0')
+LossD -39.769508361816406 LossG 19.976139068603516 BestLossD -40.16185760498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9602, device='cuda:0') BestLossF 0.07734371721744537 Iteration 212 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-1.1359,  1.0269, -0.3972], device='cuda:0')
+Loss d tensor(-40.3286, device='cuda:0')
+LossD -40.32864761352539 LossG 19.976139068603516 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(0.1192, device='cuda:0') BestLossF 0.07734371721744537 Iteration 213 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.5735,  0.8876,  0.1811], device='cuda:0')
+Loss d tensor(-39.9988, device='cuda:0')
+tensor(19.7855, device='cuda:0')
+LossD -39.998817443847656 LossG 19.78551483154297 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(0.1288, device='cuda:0') BestLossF 0.07734371721744537 Iteration 214 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.2633,  0.6265, -0.1118], device='cuda:0')
+Loss d tensor(-39.7611, device='cuda:0')
+LossD -39.7610969543457 LossG 19.78551483154297 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(0.1179, device='cuda:0') BestLossF 0.07734371721744537 Iteration 215 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 1.4385,  1.0754, -0.5981], device='cuda:0')
+Loss d tensor(-40.1581, device='cuda:0')
+LossD -40.15812683105469 LossG 19.78551483154297 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(0.1303, device='cuda:0') BestLossF 0.07734371721744537 Iteration 216 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.6969,  0.7442,  0.3650], device='cuda:0')
+Loss d tensor(-40.2458, device='cuda:0')
+LossD -40.24579620361328 LossG 19.78551483154297 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(0.1155, device='cuda:0') BestLossF 0.07734371721744537 Iteration 217 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.6569,  0.8650, -0.0260], device='cuda:0')
+Loss d tensor(-39.9160, device='cuda:0')
+LossD -39.91598129272461 LossG 19.78551483154297 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.6927, device='cuda:0') BestLossF 0.07734371721744537 Iteration 218 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.5881,  0.9838,  0.0310], device='cuda:0')
+Loss d tensor(-39.9043, device='cuda:0')
+tensor(19.8206, device='cuda:0')
+LossD -39.904273986816406 LossG 19.82059097290039 BestLossD -40.32864761352539 BestLossG 2.107762575149536 LossF tensor(0.1009, device='cuda:0') BestLossF 0.07734371721744537 Iteration 219 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.4976,  0.8706, -0.0314], device='cuda:0')
+Loss d tensor(-40.4630, device='cuda:0')
+LossD -40.46302795410156 LossG 19.82059097290039 BestLossD -40.46302795410156 BestLossG 2.107762575149536 LossF tensor(0.1160, device='cuda:0') BestLossF 0.07734371721744537 Iteration 220 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.2604,  0.8404, -0.1959], device='cuda:0')
+Loss d tensor(-40.6284, device='cuda:0')
+LossD -40.628440856933594 LossG 19.82059097290039 BestLossD -40.628440856933594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2053, device='cuda:0') BestLossF 0.07734371721744537 Iteration 221 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.8621,  0.9604,  0.1283], device='cuda:0')
+Loss d tensor(-40.3079, device='cuda:0')
+LossD -40.307884216308594 LossG 19.82059097290039 BestLossD -40.628440856933594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9175, device='cuda:0') BestLossF 0.07734371721744537 Iteration 222 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.6196,  0.8296,  0.0284], device='cuda:0')
+Loss d tensor(-40.0154, device='cuda:0')
+LossD -40.015403747558594 LossG 19.82059097290039 BestLossD -40.628440856933594 BestLossG 2.107762575149536 LossF tensor(0.1209, device='cuda:0') BestLossF 0.07734371721744537 Iteration 223 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 1.0395,  0.9675, -0.0618], device='cuda:0')
+Loss d tensor(-40.8333, device='cuda:0')
+tensor(19.9987, device='cuda:0')
+LossD -40.83327865600586 LossG 19.99873924255371 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1026, device='cuda:0') BestLossF 0.07734371721744537 Iteration 224 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([-0.1202,  1.0168, -0.0327], device='cuda:0')
+Loss d tensor(-40.5212, device='cuda:0')
+LossD -40.521156311035156 LossG 19.99873924255371 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.3686, device='cuda:0') BestLossF 0.07734371721744537 Iteration 225 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.2963,  0.9728,  0.0663], device='cuda:0')
+Loss d tensor(-40.1997, device='cuda:0')
+LossD -40.19974136352539 LossG 19.99873924255371 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.4059, device='cuda:0') BestLossF 0.07734371721744537 Iteration 226 Best Loss Iteration G 4 Best Loss Iteration F 202
+Branch Outputs::: tensor([ 0.5054,  0.7467,  0.2057], device='cuda:0')
+Loss d tensor(-40.4700, device='cuda:0')
+LossD -40.47002410888672 LossG 19.99873924255371 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.2479, device='cuda:0') BestLossF 0.0724787637591362 Iteration 227 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.5849,  0.9116,  0.4111], device='cuda:0')
+Loss d tensor(-40.2547, device='cuda:0')
+LossD -40.2546501159668 LossG 19.99873924255371 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1288, device='cuda:0') BestLossF 0.0724787637591362 Iteration 228 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.5651,  1.1192,  0.0804], device='cuda:0')
+Loss d tensor(-40.4407, device='cuda:0')
+tensor(20.0497, device='cuda:0')
+LossD -40.44071960449219 LossG 20.04967498779297 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1002, device='cuda:0') BestLossF 0.0724787637591362 Iteration 229 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.3351,  0.5766, -0.4036], device='cuda:0')
+Loss d tensor(-40.2295, device='cuda:0')
+LossD -40.229469299316406 LossG 20.04967498779297 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1015, device='cuda:0') BestLossF 0.0724787637591362 Iteration 230 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.1396,  1.1699, -0.1311], device='cuda:0')
+Loss d tensor(-40.5450, device='cuda:0')
+LossD -40.54500198364258 LossG 20.04967498779297 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1072, device='cuda:0') BestLossF 0.0724787637591362 Iteration 231 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.8292,  1.0910,  0.2594], device='cuda:0')
+Loss d tensor(-40.6191, device='cuda:0')
+LossD -40.619117736816406 LossG 20.04967498779297 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1531, device='cuda:0') BestLossF 0.0724787637591362 Iteration 232 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.7742,  0.7795,  0.3387], device='cuda:0')
+Loss d tensor(-40.4919, device='cuda:0')
+LossD -40.49186325073242 LossG 20.04967498779297 BestLossD -40.83327865600586 BestLossG 2.107762575149536 LossF tensor(0.1178, device='cuda:0') BestLossF 0.0724787637591362 Iteration 233 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.1950,  0.9462, -0.1741], device='cuda:0')
+Loss d tensor(-40.8361, device='cuda:0')
+tensor(20.2071, device='cuda:0')
+LossD -40.83609390258789 LossG 20.207080841064453 BestLossD -40.83609390258789 BestLossG 2.107762575149536 LossF tensor(0.1057, device='cuda:0') BestLossF 0.0724787637591362 Iteration 234 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.4190,  1.1445,  0.3364], device='cuda:0')
+Loss d tensor(-40.0923, device='cuda:0')
+LossD -40.092308044433594 LossG 20.207080841064453 BestLossD -40.83609390258789 BestLossG 2.107762575149536 LossF tensor(0.1120, device='cuda:0') BestLossF 0.0724787637591362 Iteration 235 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.2282,  0.7363, -0.0017], device='cuda:0')
+Loss d tensor(-40.9679, device='cuda:0')
+LossD -40.967926025390625 LossG 20.207080841064453 BestLossD -40.967926025390625 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.6519, device='cuda:0') BestLossF 0.0724787637591362 Iteration 236 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.6196,  0.9360,  0.1928], device='cuda:0')
+Loss d tensor(-40.9191, device='cuda:0')
+LossD -40.919063568115234 LossG 20.207080841064453 BestLossD -40.967926025390625 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2996, device='cuda:0') BestLossF 0.0724787637591362 Iteration 237 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-1.2954,  0.9330, -0.2172], device='cuda:0')
+Loss d tensor(-40.7922, device='cuda:0')
+LossD -40.79222869873047 LossG 20.207080841064453 BestLossD -40.967926025390625 BestLossG 2.107762575149536 LossF tensor(0.1066, device='cuda:0') BestLossF 0.0724787637591362 Iteration 238 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.0139,  0.8918,  0.0903], device='cuda:0')
+Loss d tensor(-40.9853, device='cuda:0')
+tensor(20.3179, device='cuda:0')
+LossD -40.98526382446289 LossG 20.317890167236328 BestLossD -40.98526382446289 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1180, device='cuda:0') BestLossF 0.0724787637591362 Iteration 239 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.6310,  0.9303,  0.1837], device='cuda:0')
+Loss d tensor(-40.1780, device='cuda:0')
+LossD -40.17804718017578 LossG 20.317890167236328 BestLossD -40.98526382446289 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9820, device='cuda:0') BestLossF 0.0724787637591362 Iteration 240 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.2068,  0.5547,  0.0022], device='cuda:0')
+Loss d tensor(-40.7327, device='cuda:0')
+LossD -40.73265075683594 LossG 20.317890167236328 BestLossD -40.98526382446289 BestLossG 2.107762575149536 LossF tensor(0.1101, device='cuda:0') BestLossF 0.0724787637591362 Iteration 241 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 1.4536,  0.8890, -0.0964], device='cuda:0')
+Loss d tensor(-40.7626, device='cuda:0')
+LossD -40.7625617980957 LossG 20.317890167236328 BestLossD -40.98526382446289 BestLossG 2.107762575149536 LossF tensor(0.1034, device='cuda:0') BestLossF 0.0724787637591362 Iteration 242 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.4788,  0.8617,  0.0958], device='cuda:0')
+Loss d tensor(-40.6934, device='cuda:0')
+LossD -40.69335174560547 LossG 20.317890167236328 BestLossD -40.98526382446289 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.1892, device='cuda:0') BestLossF 0.0724787637591362 Iteration 243 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.0899,  1.1513,  0.1179], device='cuda:0')
+Loss d tensor(-41.1612, device='cuda:0')
+tensor(20.4387, device='cuda:0')
+LossD -41.16117858886719 LossG 20.438669204711914 BestLossD -41.16117858886719 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.3536, device='cuda:0') BestLossF 0.0724787637591362 Iteration 244 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.7005,  0.8360,  0.0407], device='cuda:0')
+Loss d tensor(-41.3424, device='cuda:0')
+LossD -41.342350006103516 LossG 20.438669204711914 BestLossD -41.342350006103516 BestLossG 2.107762575149536 LossF tensor(0.1576, device='cuda:0') BestLossF 0.0724787637591362 Iteration 245 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.0833,  0.6600,  0.1925], device='cuda:0')
+Loss d tensor(-40.9026, device='cuda:0')
+LossD -40.90257263183594 LossG 20.438669204711914 BestLossD -41.342350006103516 BestLossG 2.107762575149536 LossF tensor(0.1269, device='cuda:0') BestLossF 0.0724787637591362 Iteration 246 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.1054,  0.8631, -0.4022], device='cuda:0')
+Loss d tensor(-41.1754, device='cuda:0')
+LossD -41.17536163330078 LossG 20.438669204711914 BestLossD -41.342350006103516 BestLossG 2.107762575149536 LossF tensor(0.1126, device='cuda:0') BestLossF 0.0724787637591362 Iteration 247 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.8300,  1.0540,  0.0033], device='cuda:0')
+Loss d tensor(-41.3510, device='cuda:0')
+LossD -41.350975036621094 LossG 20.438669204711914 BestLossD -41.350975036621094 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.6608, device='cuda:0') BestLossF 0.0724787637591362 Iteration 248 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.3844,  0.7204, -0.3518], device='cuda:0')
+Loss d tensor(-41.2790, device='cuda:0')
+tensor(20.4317, device='cuda:0')
+LossD -41.27900695800781 LossG 20.431697845458984 BestLossD -41.350975036621094 BestLossG 2.107762575149536 LossF tensor(0.1048, device='cuda:0') BestLossF 0.0724787637591362 Iteration 249 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.9023,  1.0270, -0.1164], device='cuda:0')
+Loss d tensor(-41.1069, device='cuda:0')
+LossD -41.106910705566406 LossG 20.431697845458984 BestLossD -41.350975036621094 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1677, device='cuda:0') BestLossF 0.0724787637591362 Iteration 250 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-1.0614,  0.9533,  0.2554], device='cuda:0')
+Loss d tensor(-41.4893, device='cuda:0')
+LossD -41.48931884765625 LossG 20.431697845458984 BestLossD -41.48931884765625 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1907, device='cuda:0') BestLossF 0.0724787637591362 Iteration 251 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.6330,  0.8788,  0.0392], device='cuda:0')
+Loss d tensor(-41.4366, device='cuda:0')
+LossD -41.43655014038086 LossG 20.431697845458984 BestLossD -41.48931884765625 BestLossG 2.107762575149536 LossF tensor(0.1203, device='cuda:0') BestLossF 0.0724787637591362 Iteration 252 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.6189,  0.8357,  0.2660], device='cuda:0')
+Loss d tensor(-42.0447, device='cuda:0')
+LossD -42.044677734375 LossG 20.431697845458984 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.8106, device='cuda:0') BestLossF 0.0724787637591362 Iteration 253 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.5562,  1.0915, -0.1132], device='cuda:0')
+Loss d tensor(-41.4090, device='cuda:0')
+tensor(20.5485, device='cuda:0')
+LossD -41.40896987915039 LossG 20.54854965209961 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(0.1383, device='cuda:0') BestLossF 0.0724787637591362 Iteration 254 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.5874,  1.1169, -0.2192], device='cuda:0')
+Loss d tensor(-41.7156, device='cuda:0')
+LossD -41.71558380126953 LossG 20.54854965209961 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1882, device='cuda:0') BestLossF 0.0724787637591362 Iteration 255 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.9349,  0.5379,  0.2586], device='cuda:0')
+Loss d tensor(-40.9140, device='cuda:0')
+LossD -40.913978576660156 LossG 20.54854965209961 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(0.1219, device='cuda:0') BestLossF 0.0724787637591362 Iteration 256 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.6476,  1.0917, -0.1070], device='cuda:0')
+Loss d tensor(-41.6469, device='cuda:0')
+LossD -41.64691925048828 LossG 20.54854965209961 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.0293, device='cuda:0') BestLossF 0.0724787637591362 Iteration 257 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.8123,  0.6634,  0.0483], device='cuda:0')
+Loss d tensor(-41.7146, device='cuda:0')
+LossD -41.714569091796875 LossG 20.54854965209961 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.5394, device='cuda:0') BestLossF 0.0724787637591362 Iteration 258 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.9702,  0.4990, -0.2983], device='cuda:0')
+Loss d tensor(-41.8060, device='cuda:0')
+tensor(20.5348, device='cuda:0')
+LossD -41.805973052978516 LossG 20.534793853759766 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(0.1156, device='cuda:0') BestLossF 0.0724787637591362 Iteration 259 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.1217,  1.4377,  0.2813], device='cuda:0')
+Loss d tensor(-41.5233, device='cuda:0')
+LossD -41.52325439453125 LossG 20.534793853759766 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.6044, device='cuda:0') BestLossF 0.0724787637591362 Iteration 260 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 1.0206,  0.7804,  0.0566], device='cuda:0')
+Loss d tensor(-41.4318, device='cuda:0')
+LossD -41.43177032470703 LossG 20.534793853759766 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(0.1090, device='cuda:0') BestLossF 0.0724787637591362 Iteration 261 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.9190,  1.5858, -0.0566], device='cuda:0')
+Loss d tensor(-41.9158, device='cuda:0')
+LossD -41.91577911376953 LossG 20.534793853759766 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9853, device='cuda:0') BestLossF 0.0724787637591362 Iteration 262 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.7102,  0.9581,  0.0132], device='cuda:0')
+Loss d tensor(-41.9402, device='cuda:0')
+LossD -41.940155029296875 LossG 20.534793853759766 BestLossD -42.044677734375 BestLossG 2.107762575149536 LossF tensor(0.1098, device='cuda:0') BestLossF 0.0724787637591362 Iteration 263 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.9847,  0.7911,  0.0497], device='cuda:0')
+Loss d tensor(-42.2888, device='cuda:0')
+tensor(20.8456, device='cuda:0')
+LossD -42.28883361816406 LossG 20.84562873840332 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(0.1030, device='cuda:0') BestLossF 0.0724787637591362 Iteration 264 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.9764,  0.4947, -0.2070], device='cuda:0')
+Loss d tensor(-41.4765, device='cuda:0')
+LossD -41.476478576660156 LossG 20.84562873840332 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(0.1224, device='cuda:0') BestLossF 0.0724787637591362 Iteration 265 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([ 0.1372,  0.8582, -0.1369], device='cuda:0')
+Loss d tensor(-42.0059, device='cuda:0')
+LossD -42.005897521972656 LossG 20.84562873840332 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(0.1003, device='cuda:0') BestLossF 0.0724787637591362 Iteration 266 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.6278,  1.1796,  0.1633], device='cuda:0')
+Loss d tensor(-41.7402, device='cuda:0')
+LossD -41.74021911621094 LossG 20.84562873840332 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.7410, device='cuda:0') BestLossF 0.0724787637591362 Iteration 267 Best Loss Iteration G 4 Best Loss Iteration F 227
+Branch Outputs::: tensor([-0.6126,  0.8387,  0.2589], device='cuda:0')
+Loss d tensor(-41.6774, device='cuda:0')
+LossD -41.67742919921875 LossG 20.84562873840332 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.0303, device='cuda:0') BestLossF 0.07030344754457474 Iteration 268 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-1.3530,  1.1850,  0.0443], device='cuda:0')
+Loss d tensor(-41.9268, device='cuda:0')
+tensor(20.8082, device='cuda:0')
+LossD -41.92680358886719 LossG 20.80818748474121 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(0.1025, device='cuda:0') BestLossF 0.07030344754457474 Iteration 269 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-0.7760,  1.0767, -0.0681], device='cuda:0')
+Loss d tensor(-42.1212, device='cuda:0')
+LossD -42.1212272644043 LossG 20.80818748474121 BestLossD -42.28883361816406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.8153, device='cuda:0') BestLossF 0.07030344754457474 Iteration 270 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-0.1657,  0.9206,  0.1662], device='cuda:0')
+Loss d tensor(-42.3552, device='cuda:0')
+LossD -42.35516357421875 LossG 20.80818748474121 BestLossD -42.35516357421875 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.6850, device='cuda:0') BestLossF 0.07030344754457474 Iteration 271 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-0.5746,  0.8191,  0.2987], device='cuda:0')
+Loss d tensor(-41.8206, device='cuda:0')
+LossD -41.82061767578125 LossG 20.80818748474121 BestLossD -42.35516357421875 BestLossG 2.107762575149536 LossF tensor(0.1101, device='cuda:0') BestLossF 0.07030344754457474 Iteration 272 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([ 0.6389,  1.1466, -0.1132], device='cuda:0')
+Loss d tensor(-42.2978, device='cuda:0')
+LossD -42.29777145385742 LossG 20.80818748474121 BestLossD -42.35516357421875 BestLossG 2.107762575149536 LossF tensor(0.1111, device='cuda:0') BestLossF 0.07030344754457474 Iteration 273 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([ 0.2670,  1.0343, -0.0739], device='cuda:0')
+Loss d tensor(-42.4223, device='cuda:0')
+tensor(21.0694, device='cuda:0')
+LossD -42.42228698730469 LossG 21.06942367553711 BestLossD -42.42228698730469 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.8820, device='cuda:0') BestLossF 0.07030344754457474 Iteration 274 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-0.4849,  0.7270, -0.0427], device='cuda:0')
+Loss d tensor(-42.1500, device='cuda:0')
+LossD -42.15003967285156 LossG 21.06942367553711 BestLossD -42.42228698730469 BestLossG 2.107762575149536 LossF tensor(0.1109, device='cuda:0') BestLossF 0.07030344754457474 Iteration 275 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-0.9926,  1.2169, -0.0674], device='cuda:0')
+Loss d tensor(-41.9517, device='cuda:0')
+LossD -41.951690673828125 LossG 21.06942367553711 BestLossD -42.42228698730469 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.0790, device='cuda:0') BestLossF 0.07030344754457474 Iteration 276 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([ 0.3029,  0.7682,  0.1297], device='cuda:0')
+Loss d tensor(-42.4760, device='cuda:0')
+LossD -42.47602844238281 LossG 21.06942367553711 BestLossD -42.47602844238281 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.5872, device='cuda:0') BestLossF 0.07030344754457474 Iteration 277 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([-0.2970,  0.6381, -0.0646], device='cuda:0')
+Loss d tensor(-42.9001, device='cuda:0')
+LossD -42.90013885498047 LossG 21.06942367553711 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9608, device='cuda:0') BestLossF 0.07030344754457474 Iteration 278 Best Loss Iteration G 4 Best Loss Iteration F 268
+Branch Outputs::: tensor([ 1.1417,  1.0557, -0.0047], device='cuda:0')
+Loss d tensor(-42.0804, device='cuda:0')
+tensor(20.9764, device='cuda:0')
+LossD -42.08041763305664 LossG 20.976409912109375 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       6.3392, device='cuda:0') BestLossF 0.06339152157306671 Iteration 279 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([-0.0450,  0.9150,  0.0788], device='cuda:0')
+Loss d tensor(-42.6564, device='cuda:0')
+LossD -42.6563720703125 LossG 20.976409912109375 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9880, device='cuda:0') BestLossF 0.06339152157306671 Iteration 280 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([ 0.2527,  1.0537, -0.0146], device='cuda:0')
+Loss d tensor(-42.3300, device='cuda:0')
+LossD -42.330047607421875 LossG 20.976409912109375 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(0.1055, device='cuda:0') BestLossF 0.06339152157306671 Iteration 281 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([ 0.0232,  0.8081, -0.0486], device='cuda:0')
+Loss d tensor(-42.0980, device='cuda:0')
+LossD -42.097965240478516 LossG 20.976409912109375 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.3612, device='cuda:0') BestLossF 0.06339152157306671 Iteration 282 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([-0.2991,  0.7165, -0.0935], device='cuda:0')
+Loss d tensor(-42.7002, device='cuda:0')
+LossD -42.700225830078125 LossG 20.976409912109375 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.2941, device='cuda:0') BestLossF 0.06339152157306671 Iteration 283 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([ 0.4198,  0.8943,  0.2629], device='cuda:0')
+Loss d tensor(-42.8413, device='cuda:0')
+tensor(21.3658, device='cuda:0')
+LossD -42.841339111328125 LossG 21.365835189819336 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(0.1050, device='cuda:0') BestLossF 0.06339152157306671 Iteration 284 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([ 0.3403,  0.7503, -0.2310], device='cuda:0')
+Loss d tensor(-42.4299, device='cuda:0')
+LossD -42.42985534667969 LossG 21.365835189819336 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(0.1110, device='cuda:0') BestLossF 0.06339152157306671 Iteration 285 Best Loss Iteration G 4 Best Loss Iteration F 279
+Branch Outputs::: tensor([-0.8680,  1.2372, -0.0616], device='cuda:0')
+Loss d tensor(-42.4146, device='cuda:0')
+LossD -42.41455841064453 LossG 21.365835189819336 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       6.1550, device='cuda:0') BestLossF 0.06154954805970192 Iteration 286 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.5304,  1.1518,  0.0982], device='cuda:0')
+Loss d tensor(-42.7433, device='cuda:0')
+LossD -42.743263244628906 LossG 21.365835189819336 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(0.1085, device='cuda:0') BestLossF 0.06154954805970192 Iteration 287 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.2491,  0.9304, -0.0189], device='cuda:0')
+Loss d tensor(-42.7375, device='cuda:0')
+LossD -42.73748779296875 LossG 21.365835189819336 BestLossD -42.90013885498047 BestLossG 2.107762575149536 LossF tensor(0.1273, device='cuda:0') BestLossF 0.06154954805970192 Iteration 288 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.9258,  1.1661,  0.1233], device='cuda:0')
+Loss d tensor(-42.9033, device='cuda:0')
+tensor(21.2709, device='cuda:0')
+LossD -42.903255462646484 LossG 21.270864486694336 BestLossD -42.903255462646484 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2128, device='cuda:0') BestLossF 0.06154954805970192 Iteration 289 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.5741,  1.0553, -0.3056], device='cuda:0')
+Loss d tensor(-42.9743, device='cuda:0')
+LossD -42.97428894042969 LossG 21.270864486694336 BestLossD -42.97428894042969 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2494, device='cuda:0') BestLossF 0.06154954805970192 Iteration 290 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.2254,  0.6170, -0.1049], device='cuda:0')
+Loss d tensor(-42.8529, device='cuda:0')
+LossD -42.852867126464844 LossG 21.270864486694336 BestLossD -42.97428894042969 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.3335, device='cuda:0') BestLossF 0.06154954805970192 Iteration 291 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.0354,  0.7944, -0.1428], device='cuda:0')
+Loss d tensor(-42.9539, device='cuda:0')
+LossD -42.953922271728516 LossG 21.270864486694336 BestLossD -42.97428894042969 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.6361, device='cuda:0') BestLossF 0.06154954805970192 Iteration 292 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.1313,  0.4872,  0.1651], device='cuda:0')
+Loss d tensor(-43.1115, device='cuda:0')
+LossD -43.11150360107422 LossG 21.270864486694336 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1160, device='cuda:0') BestLossF 0.06154954805970192 Iteration 293 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.9494,  1.3068,  0.2029], device='cuda:0')
+Loss d tensor(-43.0086, device='cuda:0')
+tensor(21.2543, device='cuda:0')
+LossD -43.008575439453125 LossG 21.25432586669922 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(0.1130, device='cuda:0') BestLossF 0.06154954805970192 Iteration 294 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 1.1234,  0.8847, -0.3183], device='cuda:0')
+Loss d tensor(-42.9194, device='cuda:0')
+LossD -42.91943359375 LossG 21.25432586669922 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.2126, device='cuda:0') BestLossF 0.06154954805970192 Iteration 295 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.0984,  1.0809, -0.0337], device='cuda:0')
+Loss d tensor(-42.8813, device='cuda:0')
+LossD -42.88125991821289 LossG 21.25432586669922 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(0.1091, device='cuda:0') BestLossF 0.06154954805970192 Iteration 296 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.0429,  0.8165,  0.4153], device='cuda:0')
+Loss d tensor(-42.7548, device='cuda:0')
+LossD -42.754817962646484 LossG 21.25432586669922 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(0.1059, device='cuda:0') BestLossF 0.06154954805970192 Iteration 297 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.9679,  0.7500,  0.3301], device='cuda:0')
+Loss d tensor(-42.9087, device='cuda:0')
+LossD -42.908721923828125 LossG 21.25432586669922 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(0.1025, device='cuda:0') BestLossF 0.06154954805970192 Iteration 298 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.0454,  1.0281, -0.0066], device='cuda:0')
+Loss d tensor(-42.7302, device='cuda:0')
+tensor(21.3413, device='cuda:0')
+LossD -42.73015594482422 LossG 21.34134864807129 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.1310, device='cuda:0') BestLossF 0.06154954805970192 Iteration 299 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 1.0511,  0.5978,  0.0388], device='cuda:0')
+Loss d tensor(-43.0516, device='cuda:0')
+LossD -43.05158996582031 LossG 21.34134864807129 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.1256, device='cuda:0') BestLossF 0.06154954805970192 Iteration 300 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.3249,  0.8355,  0.2891], device='cuda:0')
+Loss d tensor(-43.0608, device='cuda:0')
+LossD -43.060829162597656 LossG 21.34134864807129 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(0.1124, device='cuda:0') BestLossF 0.06154954805970192 Iteration 301 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.6673,  0.9874, -0.3094], device='cuda:0')
+Loss d tensor(-42.9350, device='cuda:0')
+LossD -42.93499755859375 LossG 21.34134864807129 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.8731, device='cuda:0') BestLossF 0.06154954805970192 Iteration 302 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.7275,  0.6070,  0.1163], device='cuda:0')
+Loss d tensor(-43.0376, device='cuda:0')
+LossD -43.03759002685547 LossG 21.34134864807129 BestLossD -43.11150360107422 BestLossG 2.107762575149536 LossF tensor(0.1071, device='cuda:0') BestLossF 0.06154954805970192 Iteration 303 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.7127,  0.9609, -0.2219], device='cuda:0')
+Loss d tensor(-43.1859, device='cuda:0')
+tensor(21.4639, device='cuda:0')
+LossD -43.18592834472656 LossG 21.463876724243164 BestLossD -43.18592834472656 BestLossG 2.107762575149536 LossF tensor(0.1042, device='cuda:0') BestLossF 0.06154954805970192 Iteration 304 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.6751,  0.5892, -0.1390], device='cuda:0')
+Loss d tensor(-43.2521, device='cuda:0')
+LossD -43.25208282470703 LossG 21.463876724243164 BestLossD -43.25208282470703 BestLossG 2.107762575149536 LossF tensor(0.1093, device='cuda:0') BestLossF 0.06154954805970192 Iteration 305 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.0559,  0.8116,  0.0584], device='cuda:0')
+Loss d tensor(-43.2642, device='cuda:0')
+LossD -43.26417541503906 LossG 21.463876724243164 BestLossD -43.26417541503906 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.8921, device='cuda:0') BestLossF 0.06154954805970192 Iteration 306 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.6761,  0.6822,  0.0861], device='cuda:0')
+Loss d tensor(-43.5393, device='cuda:0')
+LossD -43.539283752441406 LossG 21.463876724243164 BestLossD -43.539283752441406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2681, device='cuda:0') BestLossF 0.06154954805970192 Iteration 307 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.1217,  1.0751, -0.0765], device='cuda:0')
+Loss d tensor(-43.4272, device='cuda:0')
+LossD -43.427207946777344 LossG 21.463876724243164 BestLossD -43.539283752441406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.7496, device='cuda:0') BestLossF 0.06154954805970192 Iteration 308 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.5795,  0.6922, -0.1912], device='cuda:0')
+Loss d tensor(-43.1769, device='cuda:0')
+tensor(21.4633, device='cuda:0')
+LossD -43.17686462402344 LossG 21.463298797607422 BestLossD -43.539283752441406 BestLossG 2.107762575149536 LossF tensor(0.1053, device='cuda:0') BestLossF 0.06154954805970192 Iteration 309 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.3743,  0.8909, -0.2532], device='cuda:0')
+Loss d tensor(-43.5033, device='cuda:0')
+LossD -43.50325012207031 LossG 21.463298797607422 BestLossD -43.539283752441406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.7641, device='cuda:0') BestLossF 0.06154954805970192 Iteration 310 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.2377,  1.2168, -0.0103], device='cuda:0')
+Loss d tensor(-43.2046, device='cuda:0')
+LossD -43.20464324951172 LossG 21.463298797607422 BestLossD -43.539283752441406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.4221, device='cuda:0') BestLossF 0.06154954805970192 Iteration 311 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.1551,  0.7703, -0.1560], device='cuda:0')
+Loss d tensor(-43.5459, device='cuda:0')
+LossD -43.545936584472656 LossG 21.463298797607422 BestLossD -43.545936584472656 BestLossG 2.107762575149536 LossF tensor(0.1100, device='cuda:0') BestLossF 0.06154954805970192 Iteration 312 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.1062,  0.8907, -0.0506], device='cuda:0')
+Loss d tensor(-43.7226, device='cuda:0')
+LossD -43.72257614135742 LossG 21.463298797607422 BestLossD -43.72257614135742 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.7119, device='cuda:0') BestLossF 0.06154954805970192 Iteration 313 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.7224,  0.8145,  0.2086], device='cuda:0')
+Loss d tensor(-43.9142, device='cuda:0')
+tensor(21.7220, device='cuda:0')
+LossD -43.91421890258789 LossG 21.7220458984375 BestLossD -43.91421890258789 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.5726, device='cuda:0') BestLossF 0.06154954805970192 Iteration 314 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.3672,  0.9826,  0.1147], device='cuda:0')
+Loss d tensor(-43.6461, device='cuda:0')
+LossD -43.64607620239258 LossG 21.7220458984375 BestLossD -43.91421890258789 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.2298, device='cuda:0') BestLossF 0.06154954805970192 Iteration 315 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-1.0678,  0.9947, -0.1168], device='cuda:0')
+Loss d tensor(-43.4628, device='cuda:0')
+LossD -43.462764739990234 LossG 21.7220458984375 BestLossD -43.91421890258789 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.2726, device='cuda:0') BestLossF 0.06154954805970192 Iteration 316 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.6831,  0.7655, -0.0842], device='cuda:0')
+Loss d tensor(-43.6000, device='cuda:0')
+LossD -43.60000991821289 LossG 21.7220458984375 BestLossD -43.91421890258789 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9315, device='cuda:0') BestLossF 0.06154954805970192 Iteration 317 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.7690,  0.7710,  0.0262], device='cuda:0')
+Loss d tensor(-43.5599, device='cuda:0')
+LossD -43.55989074707031 LossG 21.7220458984375 BestLossD -43.91421890258789 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.8793, device='cuda:0') BestLossF 0.06154954805970192 Iteration 318 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.8837,  0.9735, -0.0440], device='cuda:0')
+Loss d tensor(-43.9177, device='cuda:0')
+tensor(21.7083, device='cuda:0')
+LossD -43.917701721191406 LossG 21.708322525024414 BestLossD -43.917701721191406 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1406, device='cuda:0') BestLossF 0.06154954805970192 Iteration 319 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.8451,  1.1218,  0.2062], device='cuda:0')
+Loss d tensor(-43.9981, device='cuda:0')
+LossD -43.99806213378906 LossG 21.708322525024414 BestLossD -43.99806213378906 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.8532, device='cuda:0') BestLossF 0.06154954805970192 Iteration 320 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.7129,  0.8037,  0.2121], device='cuda:0')
+Loss d tensor(-43.7465, device='cuda:0')
+LossD -43.746482849121094 LossG 21.708322525024414 BestLossD -43.99806213378906 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1335, device='cuda:0') BestLossF 0.06154954805970192 Iteration 321 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.2223,  0.7100,  0.3802], device='cuda:0')
+Loss d tensor(-44.1055, device='cuda:0')
+LossD -44.10546112060547 LossG 21.708322525024414 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       6.6393, device='cuda:0') BestLossF 0.06154954805970192 Iteration 322 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.6054,  0.5542,  0.1010], device='cuda:0')
+Loss d tensor(-43.4580, device='cuda:0')
+LossD -43.457984924316406 LossG 21.708322525024414 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.2055, device='cuda:0') BestLossF 0.06154954805970192 Iteration 323 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.8748,  1.0627,  0.3052], device='cuda:0')
+Loss d tensor(-43.9887, device='cuda:0')
+tensor(21.8268, device='cuda:0')
+LossD -43.988685607910156 LossG 21.826810836791992 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.0283, device='cuda:0') BestLossF 0.06154954805970192 Iteration 324 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.8663,  0.7984, -0.0768], device='cuda:0')
+Loss d tensor(-43.8643, device='cuda:0')
+LossD -43.86430740356445 LossG 21.826810836791992 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(0.1085, device='cuda:0') BestLossF 0.06154954805970192 Iteration 325 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.8514,  1.0725, -0.2293], device='cuda:0')
+Loss d tensor(-43.8143, device='cuda:0')
+LossD -43.81425857543945 LossG 21.826810836791992 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2500, device='cuda:0') BestLossF 0.06154954805970192 Iteration 326 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.8779,  1.3485, -0.2459], device='cuda:0')
+Loss d tensor(-44.0377, device='cuda:0')
+LossD -44.0377197265625 LossG 21.826810836791992 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.6795, device='cuda:0') BestLossF 0.06154954805970192 Iteration 327 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.9513,  0.9428,  0.2014], device='cuda:0')
+Loss d tensor(-44.0702, device='cuda:0')
+LossD -44.07019805908203 LossG 21.826810836791992 BestLossD -44.10546112060547 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.4962, device='cuda:0') BestLossF 0.06154954805970192 Iteration 328 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.1234,  1.0849, -0.4243], device='cuda:0')
+Loss d tensor(-44.2651, device='cuda:0')
+tensor(21.9559, device='cuda:0')
+LossD -44.26513671875 LossG 21.955907821655273 BestLossD -44.26513671875 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.8808, device='cuda:0') BestLossF 0.06154954805970192 Iteration 329 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.1377,  1.1578, -0.1245], device='cuda:0')
+Loss d tensor(-43.9389, device='cuda:0')
+LossD -43.93890380859375 LossG 21.955907821655273 BestLossD -44.26513671875 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.5740, device='cuda:0') BestLossF 0.06154954805970192 Iteration 330 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.4535,  1.1397, -0.0705], device='cuda:0')
+Loss d tensor(-44.2868, device='cuda:0')
+LossD -44.286773681640625 LossG 21.955907821655273 BestLossD -44.286773681640625 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.7202, device='cuda:0') BestLossF 0.06154954805970192 Iteration 331 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.5665,  0.7238,  0.2101], device='cuda:0')
+Loss d tensor(-44.1040, device='cuda:0')
+LossD -44.10404586791992 LossG 21.955907821655273 BestLossD -44.286773681640625 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9024, device='cuda:0') BestLossF 0.06154954805970192 Iteration 332 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.8879,  1.0622,  0.0901], device='cuda:0')
+Loss d tensor(-44.3155, device='cuda:0')
+LossD -44.31550598144531 LossG 21.955907821655273 BestLossD -44.31550598144531 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.4032, device='cuda:0') BestLossF 0.06154954805970192 Iteration 333 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.2700,  0.8630, -0.1212], device='cuda:0')
+Loss d tensor(-44.3415, device='cuda:0')
+tensor(21.9781, device='cuda:0')
+LossD -44.341514587402344 LossG 21.97807502746582 BestLossD -44.341514587402344 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.0989, device='cuda:0') BestLossF 0.06154954805970192 Iteration 334 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.7260,  1.1634, -0.1397], device='cuda:0')
+Loss d tensor(-44.1640, device='cuda:0')
+LossD -44.16396713256836 LossG 21.97807502746582 BestLossD -44.341514587402344 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.7308, device='cuda:0') BestLossF 0.06154954805970192 Iteration 335 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.6404,  1.2253, -0.0042], device='cuda:0')
+Loss d tensor(-44.1650, device='cuda:0')
+LossD -44.165016174316406 LossG 21.97807502746582 BestLossD -44.341514587402344 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.1274, device='cuda:0') BestLossF 0.06154954805970192 Iteration 336 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 1.0731,  1.0014, -0.0309], device='cuda:0')
+Loss d tensor(-44.3737, device='cuda:0')
+LossD -44.373653411865234 LossG 21.97807502746582 BestLossD -44.373653411865234 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.9931, device='cuda:0') BestLossF 0.06154954805970192 Iteration 337 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.5240,  0.8173, -0.0509], device='cuda:0')
+Loss d tensor(-43.9305, device='cuda:0')
+LossD -43.93054962158203 LossG 21.97807502746582 BestLossD -44.373653411865234 BestLossG 2.107762575149536 LossF tensor(0.1052, device='cuda:0') BestLossF 0.06154954805970192 Iteration 338 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.6128,  0.8001, -0.2136], device='cuda:0')
+Loss d tensor(-44.5935, device='cuda:0')
+tensor(22.0758, device='cuda:0')
+LossD -44.59349060058594 LossG 22.075828552246094 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       6.3328, device='cuda:0') BestLossF 0.06154954805970192 Iteration 339 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.8620,  1.0901,  0.1369], device='cuda:0')
+Loss d tensor(-44.4028, device='cuda:0')
+LossD -44.402774810791016 LossG 22.075828552246094 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.4433, device='cuda:0') BestLossF 0.06154954805970192 Iteration 340 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.0365,  1.0429, -0.1429], device='cuda:0')
+Loss d tensor(-44.2118, device='cuda:0')
+LossD -44.21184158325195 LossG 22.075828552246094 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.5932, device='cuda:0') BestLossF 0.06154954805970192 Iteration 341 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.0186,  0.8913,  0.1739], device='cuda:0')
+Loss d tensor(-44.2827, device='cuda:0')
+LossD -44.28267288208008 LossG 22.075828552246094 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(0.1041, device='cuda:0') BestLossF 0.06154954805970192 Iteration 342 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.9649,  1.0496, -0.0675], device='cuda:0')
+Loss d tensor(-44.4321, device='cuda:0')
+LossD -44.43206024169922 LossG 22.075828552246094 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.0780, device='cuda:0') BestLossF 0.06154954805970192 Iteration 343 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.1017,  0.7473,  0.2369], device='cuda:0')
+Loss d tensor(-44.3443, device='cuda:0')
+tensor(21.8686, device='cuda:0')
+LossD -44.34429168701172 LossG 21.868593215942383 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.3854, device='cuda:0') BestLossF 0.06154954805970192 Iteration 344 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.2577,  1.3415,  0.0914], device='cuda:0')
+Loss d tensor(-44.3726, device='cuda:0')
+LossD -44.372562408447266 LossG 21.868593215942383 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(0.1066, device='cuda:0') BestLossF 0.06154954805970192 Iteration 345 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.3640,  0.8750,  0.0608], device='cuda:0')
+Loss d tensor(-44.5040, device='cuda:0')
+LossD -44.50402069091797 LossG 21.868593215942383 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.8820, device='cuda:0') BestLossF 0.06154954805970192 Iteration 346 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 1.0771,  1.0318, -0.1797], device='cuda:0')
+Loss d tensor(-44.2664, device='cuda:0')
+LossD -44.26639175415039 LossG 21.868593215942383 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.9770, device='cuda:0') BestLossF 0.06154954805970192 Iteration 347 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.5495,  0.8845, -0.0651], device='cuda:0')
+Loss d tensor(-44.5409, device='cuda:0')
+LossD -44.540863037109375 LossG 21.868593215942383 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1421, device='cuda:0') BestLossF 0.06154954805970192 Iteration 348 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.7815,  1.4141, -0.1657], device='cuda:0')
+Loss d tensor(-44.5663, device='cuda:0')
+tensor(21.9712, device='cuda:0')
+LossD -44.566314697265625 LossG 21.97115707397461 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.5641, device='cuda:0') BestLossF 0.06154954805970192 Iteration 349 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.2572,  0.9382, -0.0912], device='cuda:0')
+Loss d tensor(-44.1704, device='cuda:0')
+LossD -44.17039489746094 LossG 21.97115707397461 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(0.1042, device='cuda:0') BestLossF 0.06154954805970192 Iteration 350 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.0124,  1.1426, -0.0071], device='cuda:0')
+Loss d tensor(-44.3712, device='cuda:0')
+LossD -44.37118911743164 LossG 21.97115707397461 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.0991, device='cuda:0') BestLossF 0.06154954805970192 Iteration 351 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.4125,  0.9071,  0.1609], device='cuda:0')
+Loss d tensor(-44.3477, device='cuda:0')
+LossD -44.347740173339844 LossG 21.97115707397461 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.7189, device='cuda:0') BestLossF 0.06154954805970192 Iteration 352 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.7675,  0.6904, -0.2882], device='cuda:0')
+Loss d tensor(-44.4838, device='cuda:0')
+LossD -44.4837646484375 LossG 21.97115707397461 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1191, device='cuda:0') BestLossF 0.06154954805970192 Iteration 353 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.8015,  0.3166, -0.2310], device='cuda:0')
+Loss d tensor(-44.5856, device='cuda:0')
+tensor(21.9655, device='cuda:0')
+LossD -44.585601806640625 LossG 21.965543746948242 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.0368, device='cuda:0') BestLossF 0.06154954805970192 Iteration 354 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.2886,  1.0382, -0.2572], device='cuda:0')
+Loss d tensor(-44.4686, device='cuda:0')
+LossD -44.468597412109375 LossG 21.965543746948242 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.1327, device='cuda:0') BestLossF 0.06154954805970192 Iteration 355 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 1.0334,  0.6297,  0.0416], device='cuda:0')
+Loss d tensor(-44.4699, device='cuda:0')
+LossD -44.46992874145508 LossG 21.965543746948242 BestLossD -44.59349060058594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.1034, device='cuda:0') BestLossF 0.06154954805970192 Iteration 356 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.9158,  1.0219, -0.0663], device='cuda:0')
+Loss d tensor(-44.7716, device='cuda:0')
+LossD -44.77159118652344 LossG 21.965543746948242 BestLossD -44.77159118652344 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.0163, device='cuda:0') BestLossF 0.06154954805970192 Iteration 357 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.5439,  0.8197, -0.0735], device='cuda:0')
+Loss d tensor(-44.7785, device='cuda:0')
+LossD -44.77854919433594 LossG 21.965543746948242 BestLossD -44.77854919433594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.9592, device='cuda:0') BestLossF 0.06154954805970192 Iteration 358 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.9218,  0.9980, -0.0286], device='cuda:0')
+Loss d tensor(-44.7616, device='cuda:0')
+tensor(22.0967, device='cuda:0')
+LossD -44.76162338256836 LossG 22.096721649169922 BestLossD -44.77854919433594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.6362, device='cuda:0') BestLossF 0.06154954805970192 Iteration 359 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.6526,  0.8954, -0.0777], device='cuda:0')
+Loss d tensor(-44.6599, device='cuda:0')
+LossD -44.65988540649414 LossG 22.096721649169922 BestLossD -44.77854919433594 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       6.5819, device='cuda:0') BestLossF 0.06154954805970192 Iteration 360 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.5851,  1.0209,  0.2848], device='cuda:0')
+Loss d tensor(-44.8421, device='cuda:0')
+LossD -44.84212112426758 LossG 22.096721649169922 BestLossD -44.84212112426758 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       8.1517, device='cuda:0') BestLossF 0.06154954805970192 Iteration 361 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.1913,  0.7990, -0.0521], device='cuda:0')
+Loss d tensor(-44.7233, device='cuda:0')
+LossD -44.72333908081055 LossG 22.096721649169922 BestLossD -44.84212112426758 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       9.2992, device='cuda:0') BestLossF 0.06154954805970192 Iteration 362 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-0.8469,  0.6302,  0.0884], device='cuda:0')
+Loss d tensor(-44.9558, device='cuda:0')
+LossD -44.95581817626953 LossG 22.096721649169922 BestLossD -44.95581817626953 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       6.1879, device='cuda:0') BestLossF 0.06154954805970192 Iteration 363 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([-1.0106,  1.3149,  0.0291], device='cuda:0')
+Loss d tensor(-44.6781, device='cuda:0')
+tensor(22.0530, device='cuda:0')
+LossD -44.678123474121094 LossG 22.05303192138672 BestLossD -44.95581817626953 BestLossG 2.107762575149536 LossF tensor(1.00000e-02 *
+       7.4878, device='cuda:0') BestLossF 0.06154954805970192 Iteration 364 Best Loss Iteration G 4 Best Loss Iteration F 286
+Branch Outputs::: tensor([ 0.6869,  1.2678, -0.0320], device='cuda:0')
+Loss d tensor(-44.6882, device='cuda:0')
