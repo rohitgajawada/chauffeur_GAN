@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: imgaug-gpu
+Version: 0.1
+Summary: Image augmentation library for machine learning using gpu and pytorch
+Home-page: https://github.com/felipecode/imgaug_gpu
+Author: Felipe Codevilla
+Author-email: felipe.alcm@gmail.com
+License: MIT
+Description: A library for image augmentation in machine learning experiments, particularly convolutional neural networks.
+        Supports augmentation of images and keypoints/landmarks in a variety of different ways.
+Keywords: augmentation,image,deep learning,neural network,machine learning
+Platform: UNKNOWN
