@@ -137,8 +137,10 @@ while True:
             write_loss(iterations, trainer, train_writer)
 
         # Write images
-        train_display_images_a = Variable(imgs_a.cuda(), requires_grad=False)
-        train_display_images_b = Variable(imgs_b.cuda(), requires_grad=False)
+        train_display_images_a = Variable(imgs_a.cuda(), requires_grad=False, volatile=True)
+        train_display_images_b = Variable(imgs_b.cuda(), requires_grad=False, volatile=True)
+
+        sys.stdout.flush()
 
         if (iterations + 1) % config['image_save_iter'] == 0:
             image_outputs = trainer.sample(train_display_images_a, train_display_images_b)
