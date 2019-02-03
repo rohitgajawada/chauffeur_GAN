@@ -1,2 +1,15 @@
 outputs/
 logs/
+models/
+*.pyc
+__pycache__
+network/*/*/*.pyc
+network/*/*.pyc
+network/*.pyc
+network/__pycache__
+logger/*.pyc
+input/*.pyc
+configs_UNIT/*.yaml
+logs/
+outputs/
+slurm*

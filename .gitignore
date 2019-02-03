@@ -1,11 +1,1 @@
-./Our_Experiments/UNIT_DA/*.pyc
-./Our_Experiments/UNIT_DA/__pycache__
-./Our_Experiments/UNIT_DA/network/models/building_blocks/*.pyc
-./Our_Experiments/UNIT_DA/network/models/*.pyc
-./Our_Experiments/UNIT_DA/network/*.pyc
-./Our_Experiments/UNIT_DA/network/__pycache__
-./Our_Experiments/UNIT_DA/logger/*.pyc
-./Our_Experiments/UNIT_DA/input/*.pyc
-./Our_Experiments/UNIT_DA/configs_UNIT/*.yaml
-./Our_Experiments/UNIT_DA/logs/*
-./Our_Experiments/UNIT_DA/outputs/*
+

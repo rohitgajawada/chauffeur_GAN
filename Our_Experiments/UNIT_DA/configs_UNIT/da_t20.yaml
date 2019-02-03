@@ -53,5 +53,5 @@ new_size: 128                             # first resize the shortest image side
 crop_image_height: 128                      # random crop image of this height
 crop_image_width: 128                       # random crop image of this width
 
-train_dataset_name: /datatmp/Datasets/July10_Data/July10_UNIT_L1
-target_domain_path: /datatmp/Datasets/July10_Data/July10_UNIT_W12_images_2
+train_dataset_name: /scratch/CVC_DA/CARLA_Town01_Datasets/CARLA_Town01_Datasets/Low-W1-Town1-128x128-30k/
+target_domain_path: /scratch/CVC_DA/CARLA_Town01_Datasets/CARLA_Town01_Datasets/w5raw/
