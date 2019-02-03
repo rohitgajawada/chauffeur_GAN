@@ -11,7 +11,7 @@ try:
 except ImportError: # will be 3.x series
     pass
 
-from network.models.building_blocks import Conv
+from network.models.building_blocks import Conv, CoordConv
 from network.models.building_blocks import Branching
 from network.models.building_blocks import FC
 from network.models.building_blocks import Join
@@ -55,6 +55,58 @@ class _netF(nn.Module):
                                        'end_layer': False})
 
         self.branch = FC(params={'kernel_sizes': [512, 256, 256, 3],
+                                               'dropouts': [0.5, 0.5, 0.0],
+                                               'end_layer': True})
+
+        # for m in self.modules():
+        #     if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
+        #         nn.init.xavier_uniform_(m.weight)
+        #         nn.init.constant_(m.bias, 0.1)
+
+
+    def forward(self, embed, a):
+
+        out = self.perception_bottom(embed)
+        m = self.measurements(a)
+        j = self.join(out, m)
+
+        branch_output = self.branch(j)
+        speed_branch_output = self.speed_branch(out)
+
+        return [branch_output] + [speed_branch_output]
+
+class _netF_CoordConv(nn.Module):
+    def __init__(self, loss='LSGAN', skip=True):
+        super(_netF_CoordConv, self).__init__()
+
+        self.perception_bottom = nn.Sequential(*[
+                            CoordConv(params={'channel_sizes': [256, 256, 64, 32],
+                                         'kernel_sizes': [5, 5, 5],
+                                         'strides': [1, 1, 1],
+                                         'dropouts': [0.4, 0.4, 0.4],
+                                         'end_layer': True}),
+                            FC(params={'kernel_sizes': [32, 32, 32],
+                                       'dropouts': [0.5, 0.5],
+                                       'end_layer': False})]
+                            )
+
+        self.measurements = FC(params={'kernel_sizes': [1, 32, 32],
+                                       'dropouts': [0.5, 0.5],
+                                       'end_layer': False})
+
+
+        self.join = Join(params={'after_process': FC(params={'kernel_sizes': [64, 64],
+                                                             'dropouts': [0.5],
+                                                             'end_layer': False}),
+                                 'mode': 'cat'
+                                }
+                         )
+
+        self.speed_branch = FC(params={'kernel_sizes': [32, 32, 32, 1],
+                                       'dropouts': [0.5, 0.5, 0.0],
+                                       'end_layer': False})
+
+        self.branch = FC(params={'kernel_sizes': [64, 32, 32, 3],
                                                'dropouts': [0.5, 0.5, 0.0],
                                                'end_layer': True})
 

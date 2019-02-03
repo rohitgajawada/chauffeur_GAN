@@ -2,7 +2,7 @@
 Copyright (C) 2017 NVIDIA Corporation.  All rights reserved.
 Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 """
-from networks import AdaINGen, MsImageDis, VAEGen, _netF
+from networks import AdaINGen, MsImageDis, VAEGen, _netF, _netF_CoordConv
 from utilsUNIT import weights_init, get_model_list, vgg_preprocess, load_vgg16, get_scheduler
 from torch.autograd import Variable
 import torch
@@ -16,12 +16,15 @@ from torchvision import transforms
 import math
 
 class UNIT_Trainer(nn.Module):
-	def __init__(self, hyperparameters):
+	def __init__(self, hyperparameters, coordconv=False):
 		super(UNIT_Trainer, self).__init__()
 		lr = hyperparameters['lr']
 
 		# task part
-		self.netF = _netF().cuda()
+		if coordconv:
+			self.netF = _netF_CoordConv().cuda()
+		else:
+			self.netF = _netF().cuda()
 		# netF.train()
 		self.Task_Loss = TaskLoss()
 

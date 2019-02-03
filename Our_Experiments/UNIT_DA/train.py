@@ -29,6 +29,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--config', type=str, default='configs_UNIT/da_t20.yaml', help='Path to the config file.')
 parser.add_argument('--output_path', type=str, default='.', help="outputs path")
 parser.add_argument("--resume", action="store_true")
+parser.add_argument("--coordconv", action="store_true")
 parser.add_argument('--trainer', type=str, default='UNIT', help="MUNIT|UNIT")
 parser.add_argument('--gpu', type=str, default='0', help="gpu id")
 
@@ -44,7 +45,10 @@ config['vgg_model_path'] = opts.output_path
 
 # Setup model and data loader
 if opts.trainer == 'UNIT':
-    trainer = UNIT_Trainer(config)
+    if opts.coordconv:
+        trainer = UNIT_Trainer(config, coordconv=True)
+    else:
+        trainer = UNIT_Trainer(config, coordconv=False)
 else:
     sys.exit("Only support MUNIT|UNIT")
 trainer.cuda()
