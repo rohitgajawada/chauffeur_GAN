@@ -22,7 +22,7 @@ class UNIT_Trainer(nn.Module):
 
 		# task part
 		if coordconv:
-			self.netF = _netF_CoordConv().cuda()
+			self.netF = _netF_Wayve().cuda()
 		else:
 			self.netF = _netF().cuda()
 		# netF.train()
