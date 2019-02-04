@@ -127,6 +127,31 @@ class _netF_CoordConv(nn.Module):
 
         return [branch_output] + [speed_branch_output]
 
+class _netF_Wayve(nn.Module):
+    def __init__(self, loss='LSGAN', skip=True):
+        super(_netF_Wayve, self).__init__()
+
+        self.perception_bottom = nn.Sequential(*[
+                            CoordConv(params={'channel_sizes': [256, 256, 256],
+                                         'kernel_sizes': [5, 5],
+                                         'strides': [1, 1],
+                                         'dropouts': [0.4, 0.4],
+                                         'end_layer': True}),
+                            FC(params={'kernel_sizes': [256, 128, 16, 3],
+                                       'dropouts': [0.5, 0.5, 0],
+                                       'end_layer': False})]
+                            )
+
+        # for m in self.modules():
+        #     if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
+        #         nn.init.xavier_uniform_(m.weight)
+        #         nn.init.constant_(m.bias, 0.1)
+
+
+    def forward(self, embed, a):
+        out = self.perception_bottom(embed)
+        return [out] + [torch.tensor([[0]]).cuda()]
+
 
 ##################################################################################
 # Discriminator
