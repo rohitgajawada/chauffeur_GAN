@@ -216,8 +216,9 @@ class CoILDataset(Dataset):
             value error when the configuration set targets that didn't exist in metadata
         """
 
-        targets_gconf = ['steer', 'throttle', 'brake']
-        inputs_gconf = ['speed_module']
+        # targets_gconf = ['steer', 'throttle', 'brake']
+        targets_gconf = ['steer']
+        # inputs_gconf = ['speed_module']
         targets_vec = []
         for target_name in targets_gconf:
             targets_vec.append(float_data[:, np.where(self.meta_data[:, 0] == target_name)[0][0], :])

@@ -137,7 +137,7 @@ class _netF_Wayve(nn.Module):
                                          'strides': [1, 1],
                                          'dropouts': [0.4, 0.4],
                                          'end_layer': True}),
-                            FC(params={'kernel_sizes': [256, 128, 16, 3],
+                            FC(params={'kernel_sizes': [256, 128, 16, 1],
                                        'dropouts': [0.5, 0.5, 0],
                                        'end_layer': False})]
                             )
