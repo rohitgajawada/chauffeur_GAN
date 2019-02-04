@@ -13,3 +13,4 @@ configs_UNIT/*.yaml
 logs/
 outputs/
 slurm*
+json.log

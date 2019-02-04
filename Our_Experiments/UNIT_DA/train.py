@@ -30,6 +30,7 @@ parser.add_argument('--config', type=str, default='configs_UNIT/da_t20.yaml', he
 parser.add_argument('--output_path', type=str, default='/scratch/ROHITCVC', help="outputs path")
 parser.add_argument("--resume", action="store_true")
 parser.add_argument("--coordconv", action="store_true")
+parser.add_argument("--nospeed", action="store_true")
 parser.add_argument('--trainer', type=str, default='UNIT', help="MUNIT|UNIT")
 parser.add_argument('--gpu', type=str, default='0', help="gpu id")
 
@@ -44,11 +45,12 @@ display_size = config['display_size']
 config['vgg_model_path'] = opts.output_path
 
 # Setup model and data loader
+
 if opts.trainer == 'UNIT':
     if opts.coordconv:
-        trainer = UNIT_Trainer(config, coordconv=True)
+        trainer = UNIT_Trainer(config, coordconv=True, no_speed=opts.nospeed)
     else:
-        trainer = UNIT_Trainer(config, coordconv=False)
+        trainer = UNIT_Trainer(config, coordconv=False, no_speed=opts.nospeed)
 else:
     sys.exit("Only support MUNIT|UNIT")
 trainer.cuda()
@@ -61,6 +63,8 @@ torch.cuda.manual_seed(manualSeed)
 os.environ["CUDA_VISIBLE_DEVICES"] = opts.gpu
 
 print(strftime("%Y-%m-%d %H:%M:%S", gmtime()))
+if opts.nospeed:
+    print("Wayve style with no speed")
 
 full_dataset = config['train_dataset_name']
 real_dataset = config['target_domain_path']

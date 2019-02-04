@@ -2,7 +2,7 @@
 Copyright (C) 2017 NVIDIA Corporation.  All rights reserved.
 Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 """
-from networks import AdaINGen, MsImageDis, VAEGen, _netF, _netF_CoordConv
+from networks import AdaINGen, MsImageDis, VAEGen, _netF, _netF_CoordConv, _netF_Wayve
 from utilsUNIT import weights_init, get_model_list, vgg_preprocess, load_vgg16, get_scheduler
 from torch.autograd import Variable
 import torch
@@ -16,10 +16,10 @@ from torchvision import transforms
 import math
 
 class UNIT_Trainer(nn.Module):
-	def __init__(self, hyperparameters, coordconv=False):
+	def __init__(self, hyperparameters, coordconv=False, no_speed=False):
 		super(UNIT_Trainer, self).__init__()
 		lr = hyperparameters['lr']
-
+		self.no_speed = no_speed
 		# task part
 		if coordconv:
 			self.netF = _netF_Wayve().cuda()
@@ -27,6 +27,7 @@ class UNIT_Trainer(nn.Module):
 			self.netF = _netF().cuda()
 		# netF.train()
 		self.Task_Loss = TaskLoss()
+		self.mseloss = nn.MSELoss()
 
 		# Initiate the networks
 		self.gen_a = VAEGen(hyperparameters['input_dim_a'], hyperparameters['gen'])  # auto-encoder for domain a
@@ -155,10 +156,16 @@ class UNIT_Trainer(nn.Module):
 		controls = Variable(float_data[:, dataset.controls_position(), :])
 
 		# task loss
-		self.lossF_identity_task = self.Task_Loss.MSELoss(identity_task, Variable(dataset.extract_targets(float_data)).cuda(),
-									 controls.cuda(), Variable(dataset.extract_inputs(float_data)).cuda())
-		self.lossF_cycle_task = self.Task_Loss.MSELoss(cycle_task, Variable(dataset.extract_targets(float_data)).cuda(),
-									 controls.cuda(), Variable(dataset.extract_inputs(float_data)).cuda())
+		if self.no_speed:
+			self.lossF_identity_task = self.mseloss(identity_task, Variable(dataset.extract_targets(float_data)).cuda())
+			self.lossF_cycle_task = self.mseloss(cycle_task, Variable(dataset.extract_targets(float_data)).cuda())
+		else:
+			print("Fast and the furious")
+			self.lossF_identity_task = self.Task_Loss.MSELoss(identity_task, Variable(dataset.extract_targets(float_data)).cuda(),
+										 controls.cuda(), Variable(dataset.extract_inputs(float_data)).cuda())
+			self.lossF_cycle_task = self.Task_Loss.MSELoss(cycle_task, Variable(dataset.extract_targets(float_data)).cuda(),
+										 controls.cuda(), Variable(dataset.extract_inputs(float_data)).cuda())
+
 		self.lossF_task = self.lossF_identity_task + self.lossF_cycle_task
 
 		# reconstruction loss

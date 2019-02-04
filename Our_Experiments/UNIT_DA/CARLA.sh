@@ -9,4 +9,4 @@
 module add cuda/8.0
 module add cudnn/7-cuda-8.0
 
-python2 train.py --config="$1"
+python2 train.py --config="$1" --coordconv --nospeed

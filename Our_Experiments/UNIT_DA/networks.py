@@ -150,7 +150,8 @@ class _netF_Wayve(nn.Module):
 
     def forward(self, embed, a):
         out = self.perception_bottom(embed)
-        return [out] + [torch.tensor([[0]]).cuda()]
+        return out
+        # return [out] + [torch.tensor([[0]]).cuda()]
 
 
 ##################################################################################
